@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+// app-header {
+//   height: 1024px;
+//   width: 1024px;
+//   background-color: grey;
+//   border: 1px solid black;
+// }
+
+@media (min-width: 1200px) {
+  app-home-page {
+    font-size: 18px;
+    height: 1000px;
+    width: 1200px;
+    background-color: rgb(192, 192, 192);
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  app-footer {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 480px) {
+}
+
+@media (min-width: 320px) {
+}
