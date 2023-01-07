@@ -49,9 +49,14 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .btn-floating {
+    display: block;
+    margin: 0 auto !important;
+    width: 50px;
+  }
 }
 
-/*VERY SMALL DEVICES */
+/*SMALL DEVICES */
 @media (min-width: 320px) and (max-width: 575px) {
   app-home-page {
     font-size: 14px;
@@ -62,9 +67,14 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .btn-floating {
+    display: block;
+    margin: 0 auto !important;
+    width: 50px;
+  }
 }
 
-/*SMALLEST DEVICES */
+/*VERY SMALL DEVICES */
 @media (min-width: 0px) and (max-width: 319px) {
   app-home-page {
     font-size: 10px;
@@ -74,5 +84,10 @@
     border: 1px solid black;
     margin-left: auto;
     margin-right: auto;
+  }
+  .btn-floating {
+    display: block;
+    margin: 0 auto !important;
+    width: 50px;
   }
 }

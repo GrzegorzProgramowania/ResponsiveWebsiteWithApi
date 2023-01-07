@@ -1,6 +1,8 @@
+<audio id="myAudio" src="/assets/sounds/StarWars.mp3"></audio>
+<audio #audio src="/assets/sounds/lightsabre.mp3"></audio>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#" tooltip="Jestem tooltipem"
+    <a class="navbar-brand" href="#" tooltip="Jestem BabyYodą (tooltipem)"
       ><img src="assets/img/babyJoda.png" alt="Opis obrazu"
     /></a>
     <button
@@ -16,8 +18,11 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="visibleMenu" *ngIf="!menuVisible">
-      <li class="nav-item p-2 bd-highlight">
+    <div class="visibleMenu" *ngIf="menuVisible">
+      <li
+        (click)="playSound(); menuVisible = false"
+        class="nav-item p-2 bd-highlight"
+      >
         <a
           class="nav-link"
           routerLink="home"
@@ -26,7 +31,10 @@
           >Home</a
         >
       </li>
-      <li class="nav-item p-2 bd-highlight">
+      <li
+        (click)="playSound(); menuVisible = false"
+        class="nav-item p-2 bd-highlight"
+      >
         <a
           class="nav-link"
           routerLink="contact"
@@ -35,7 +43,10 @@
           >Contact</a
         >
       </li>
-      <li class="nav-item p-2 bd-highlight">
+      <li
+        (click)="playSound(); menuVisible = false"
+        class="nav-item p-2 bd-highlight"
+      >
         <a
           class="nav-link"
           routerLink="about-us"
@@ -44,7 +55,10 @@
           >About Us</a
         >
       </li>
-      <li class="nav-item p-2 bd-highlight">
+      <li
+        (click)="playSound(); menuVisible = false"
+        class="nav-item p-2 bd-highlight"
+      >
         <a
           class="nav-link"
           routerLink="history"
@@ -53,7 +67,7 @@
           >History</a
         >
       </li>
-      <form class="d-flex">
+      <form class="d-flex" id="Top">
         <input
           class="form-control me-2"
           type="search"
@@ -66,7 +80,7 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
-        <li class="nav-item p-2 bd-highlight">
+        <li (click)="playSound()" class="nav-item p-2 bd-highlight">
           <a
             class="nav-link"
             routerLink="home"
@@ -75,7 +89,7 @@
             >Home</a
           >
         </li>
-        <li class="nav-item p-2 bd-highlight">
+        <li (click)="playSound()" class="nav-item p-2 bd-highlight">
           <a
             class="nav-link"
             routerLink="contact"
@@ -84,7 +98,7 @@
             >Contact</a
           >
         </li>
-        <li class="nav-item p-2 bd-highlight">
+        <li (click)="playSound()" class="nav-item p-2 bd-highlight">
           <a
             class="nav-link"
             routerLink="about-us"
@@ -93,7 +107,7 @@
             >About Us</a
           >
         </li>
-        <li class="nav-item p-2 bd-highlight">
+        <li (click)="playSound()" class="nav-item p-2 bd-highlight">
           <a
             class="nav-link"
             routerLink="history"
