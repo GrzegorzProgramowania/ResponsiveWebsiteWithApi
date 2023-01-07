@@ -15,6 +15,8 @@ import { HistoryPageComponent } from './pages/history-page/history-page.componen
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { TopBarComponent } from './top-bar/top-bar.component';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HistoryPageComponent,
     HeaderComponent,
     FooterComponent,
+    TopBarComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +36,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     TooltipModule.forRoot(),
     BsDropdownModule.forRoot(),
     NgbModule,
+    CollapseModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],

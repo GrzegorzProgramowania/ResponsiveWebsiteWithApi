@@ -1,7 +1,10 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#" tooltip="Jestem tooltipem ">Navbar</a>
+    <a class="navbar-brand" href="#" tooltip="Jestem tooltipem"
+      ><img src="assets/img/babyJoda.png" alt="Opis obrazu"
+    /></a>
     <button
+      id="myButton"
       (click)="menuVisible = !menuVisible"
       class="navbar-toggler"
       type="button"
@@ -13,7 +16,53 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div *ngIf="menuVisible">przykładowy tekst</div>
+    <div class="visibleMenu" *ngIf="!menuVisible">
+      <li class="nav-item p-2 bd-highlight">
+        <a
+          class="nav-link"
+          routerLink="home"
+          routerLinkActive="active"
+          aria-current="page"
+          >Home</a
+        >
+      </li>
+      <li class="nav-item p-2 bd-highlight">
+        <a
+          class="nav-link"
+          routerLink="contact"
+          routerLinkActive="active"
+          aria-current="page"
+          >Contact</a
+        >
+      </li>
+      <li class="nav-item p-2 bd-highlight">
+        <a
+          class="nav-link"
+          routerLink="about-us"
+          routerLinkActive="active"
+          aria-current="page"
+          >About Us</a
+        >
+      </li>
+      <li class="nav-item p-2 bd-highlight">
+        <a
+          class="nav-link"
+          routerLink="history"
+          routerLinkActive="active"
+          aria-current="page"
+          >History</a
+        >
+      </li>
+      <form class="d-flex">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
@@ -87,19 +136,11 @@
             </ul>
           </div>
         </li>
-        <li class="nav-item p-2 bd-highlight">
-          <a
-            class="nav-link disabled"
-            href="#"
-            tabindex="-1"
-            aria-disabled="true"
-            >Disabled</a
-          >
-        </li>
       </ul>
       <form class="d-flex">
         <input
           class="form-control me-2"
+          id="top"
           type="search"
           placeholder="Search"
           aria-label="Search"
