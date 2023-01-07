@@ -9,4 +9,6 @@ import { Component } from '@angular/core';
 // @NgbModule({
 //   imports: [NgbModule],
 // })
-export class HeaderComponent {}
+export class HeaderComponent {
+  menuVisible: boolean = false;
+}

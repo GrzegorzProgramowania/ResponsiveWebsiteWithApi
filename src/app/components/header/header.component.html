@@ -1,7 +1,8 @@
-<nav class="navbar navbar-expand-md navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#" tooltip="Jestem tooltipem ">Navbar</a>
     <button
+      (click)="menuVisible = !menuVisible"
       class="navbar-toggler"
       type="button"
       data-bs-toggle="collapse"
@@ -12,9 +13,10 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
+    <div *ngIf="menuVisible">przykładowy tekst</div>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
         <li class="nav-item p-2 bd-highlight">
           <a
             class="nav-link"

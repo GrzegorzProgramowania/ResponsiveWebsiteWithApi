@@ -24,7 +24,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AboutUsPageComponent,
     HistoryPageComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,9 +32,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserAnimationsModule,
     TooltipModule.forRoot(),
     BsDropdownModule.forRoot(),
-    NgbModule
+    NgbModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

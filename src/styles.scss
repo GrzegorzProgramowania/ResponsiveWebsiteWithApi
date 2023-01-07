@@ -1,3 +1,4 @@
+/*BIG SCREENS XXL*/
 @media (min-width: 1200px) {
   app-home-page {
     font-size: 18px;
@@ -12,18 +13,66 @@
     font-size: 18px;
   }
 }
-
-@media (min-width: 992px) {
+/*DESKTOP XL*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  app-home-page {
+    font-size: 18px;
+    width: 800px;
+    height: 600px;
+    background-color: rgb(192, 192, 192);
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/*TABLET*/
+@media (min-width: 768px) and (max-width: 991px) {
+  app-home-page {
+    font-size: 16px;
+    width: 600px;
+    height: 400px;
+    background-color: rgb(192, 192, 192);
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-@media (min-width: 768px) {
+/*SMALL DEVICES*/
+@media (min-width: 576px) and (max-width: 767px) {
+  app-home-page {
+    font-size: 14px;
+    width: 550px;
+    height: 300px;
+    background-color: rgb(192, 192, 192);
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-@media (min-width: 576px) {
+/*VERY SMALL DEVICES */
+@media (min-width: 320px) and (max-width: 575px) {
+  app-home-page {
+    font-size: 14px;
+    width: 320;
+    height: 400;
+    background-color: rgb(192, 192, 192);
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-@media (min-width: 480px) {
-}
-
-@media (min-width: 320px) {
+/*SMALLEST DEVICES */
+@media (min-width: 0px) and (max-width: 319px) {
+  app-home-page {
+    font-size: 10px;
+    width: 300;
+    height: 400;
+    background-color: rgb(192, 192, 192);
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
