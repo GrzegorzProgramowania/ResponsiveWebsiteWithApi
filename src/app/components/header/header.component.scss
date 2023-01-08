@@ -2,6 +2,10 @@
   display: block;
 }
 
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.55);
+  border-color: white;
+}
 $lightsaber-color: #00bfff;
 
 .navbar-nav {

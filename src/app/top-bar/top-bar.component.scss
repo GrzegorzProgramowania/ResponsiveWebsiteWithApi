@@ -1,12 +1,27 @@
 :host {
   display: block;
 }
+
+//variables
+$bgDark: #111213;
+
+$lightsaber-color: #00bfff;
+
 a {
   text-decoration: none;
   // color: inherit;
 }
 
 .star-wars-h1 {
-  color: white;
   text-shadow: -2px 2px black, 2px 2px black, -2px -2px black, 2px -2px black;
+  color: white;
+  &:active {
+    color: $lightsaber-color;
+  }
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: inherit;
+    color: $lightsaber-color;
+  }
 }
