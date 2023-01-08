@@ -26,5 +26,8 @@ export class HeaderComponent {
 
   playSound() {
     this.audio.nativeElement.play();
+    setTimeout(() => {
+      this.audio.nativeElement.pause();
+    }, this.audio.nativeElement.duration * 1000);
   }
 }
