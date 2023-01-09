@@ -17,6 +17,9 @@ import { FooterComponent } from './footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
+//API
+import { PlanetComponent } from './planet/planet.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,6 +31,7 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
     HeaderComponent,
     FooterComponent,
     TopBarComponent,
+    PlanetComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,6 +41,7 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
     BsDropdownModule.forRoot(),
     NgbModule,
     CollapseModule.forRoot(),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
