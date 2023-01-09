@@ -7,6 +7,7 @@
   border-color: white;
 }
 $lightsaber-color: #00bfff;
+$bgDark: #111213;
 
 .navbar-nav {
   .nav-link {
@@ -19,6 +20,10 @@ $lightsaber-color: #00bfff;
       color: $lightsaber-color;
     }
   }
+}
+
+.menuVisible {
+  color: red;
 }
 
 .visibleMenu {
@@ -56,3 +61,20 @@ a {
   justify-content: center;
   margin-bottom: 10px;
 }
+
+// NIE DZIALA ? PEWNIE CO NADPISUJE nie widać ich
+// .navbar-toggler:hover {
+//   color: #00bfff;
+//   border-color: #00bfff;
+//   box-shadow: 0 0 10px #00bfff;
+// }
+// .navbar-toggler span::before,
+// .navbar-toggler span::after {
+//   background-color: #00bfff;
+// }
+
+// .navbar-toggler:active {
+//   color: #00bfff;
+//   border-color: #00bfff;
+//   box-shadow: 0 0 10px #00bfff;
+// }
