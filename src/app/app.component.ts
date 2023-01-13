@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { PlanetComponent } from './planet/planet.component';
-import { PlanetService } from './planet/planet.service';
+import { PlanetService } from './planet.service';
+import { PlanetListComponent } from './planet-list/planet-list.component';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -15,8 +17,8 @@ export class AppComponent implements OnInit {
     this.planetService.getPlanet(1).subscribe((planet) => {
       console.warn(planet);
     });
-  }
-  getPlanet() {
-    // implementation here
+    this.planetService
+      .getPlanets()
+      .subscribe((planets) => (this.planets = planets));
   }
 }

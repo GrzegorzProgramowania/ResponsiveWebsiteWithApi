@@ -20,6 +20,9 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
 //API
 import { PlanetComponent } from './planet/planet.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PlanetListComponent } from './planet-list/planet-list.component';
+import { UserPageComponent } from './user-page/user-page.component';
+import { UserListComponent } from './user-list/user-list.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +35,9 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     TopBarComponent,
     PlanetComponent,
+    PlanetListComponent,
+    UserPageComponent,
+    UserListComponent,
   ],
   imports: [
     BrowserModule,
