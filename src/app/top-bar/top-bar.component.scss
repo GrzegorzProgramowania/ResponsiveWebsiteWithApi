@@ -4,8 +4,8 @@
 
 //variables
 $bgDark: #111213;
-
 $lightsaber-color: #00bfff;
+$goldTitle: #fdb813;
 
 a {
   text-decoration: none;
@@ -15,6 +15,7 @@ a {
 .star-wars-h1 {
   text-shadow: -2px 2px black, 2px 2px black, -2px -2px black, 2px -2px black;
   color: white;
+  // color: $goldTitle;
   &:active {
     color: $lightsaber-color;
   }
