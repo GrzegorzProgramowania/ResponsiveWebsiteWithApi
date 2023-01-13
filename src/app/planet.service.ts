@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Planet } from './planet';
+import { Planet } from './interfaces/planet';
 
 @Injectable({
   providedIn: 'root',
@@ -14,16 +14,5 @@ export class PlanetService {
 
   getPlanets() {
     return this.http.get<Planet[]>(`https://swapi.dev/api/planets/`);
-  }
-}
-
-export class PlanetListComponent {
-  planets: Planet[] = [];
-
-  constructor(private planetService: PlanetService) {}
-  ngOnInit() {
-    this.planetService
-      .getPlanets()
-      .subscribe((planets) => (this.planets = planets));
   }
 }

@@ -18,11 +18,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 //API
-import { PlanetComponent } from './planet/planet.component';
+import { PlanetPageComponent } from './pages/planet-page/planet-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PlanetListComponent } from './planet-list/planet-list.component';
 import { UserPageComponent } from './user-page/user-page.component';
-import { UserListComponent } from './user-list/user-list.component';
 
 @NgModule({
   declarations: [
@@ -34,10 +33,9 @@ import { UserListComponent } from './user-list/user-list.component';
     HeaderComponent,
     FooterComponent,
     TopBarComponent,
-    PlanetComponent,
+    PlanetPageComponent,
     PlanetListComponent,
     UserPageComponent,
-    UserListComponent,
   ],
   imports: [
     BrowserModule,

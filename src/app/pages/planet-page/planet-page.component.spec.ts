@@ -1,18 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PlanetComponent } from './planet.component';
+import { PlanetPageComponent } from './planet-page.component';
 
 describe('PlanetComponent', () => {
-  let component: PlanetComponent;
-  let fixture: ComponentFixture<PlanetComponent>;
+  let component: PlanetPageComponent;
+  let fixture: ComponentFixture<PlanetPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PlanetComponent ]
-    })
-    .compileComponents();
+      declarations: [PlanetPageComponent],
+    }).compileComponents();
 
-    fixture = TestBed.createComponent(PlanetComponent);
+    fixture = TestBed.createComponent(PlanetPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

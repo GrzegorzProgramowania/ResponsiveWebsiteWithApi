@@ -68,6 +68,18 @@
           >History</a
         >
       </li>
+      <li
+        (click)="playSound(); menuVisible = false"
+        class="nav-item p-2 bd-highlight"
+      >
+        <a
+          class="nav-link"
+          routerLink="planets"
+          routerLinkActive="active"
+          aria-current="page"
+          >Planets</a
+        >
+      </li>
       <form class="d-flex" id="Top">
         <input
           class="form-control me-2"
@@ -115,6 +127,18 @@
             routerLinkActive="active"
             aria-current="page"
             >History</a
+          >
+        </li>
+        <li
+          (click)="playSound(); menuVisible = false"
+          class="nav-item p-2 bd-highlight"
+        >
+          <a
+            class="nav-link"
+            routerLink="planets"
+            routerLinkActive="active"
+            aria-current="page"
+            >Planets</a
           >
         </li>
         <li class="nav-item p-2 bd-highlight">

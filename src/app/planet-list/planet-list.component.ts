@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Planet } from '../interfaces/planet';
 
 @Component({
   selector: 'app-planet-list',
@@ -9,5 +10,5 @@ import { Component, Input } from '@angular/core';
   `,
 })
 export class PlanetListComponent {
-  @Input() planets: Planet[];
+  @Input() planets: Planet[] = [];
 }
