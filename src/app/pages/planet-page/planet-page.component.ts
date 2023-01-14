@@ -19,7 +19,7 @@ export class PlanetPageComponent {
 
   getPlanets() {
     this.planetService.getPlanets().subscribe((planets) => {
-      this.planets = planets;
+      this.planets = Object.values(planets);
     });
   }
 }

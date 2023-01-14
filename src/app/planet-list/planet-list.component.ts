@@ -5,7 +5,7 @@ import { Planet } from '../interfaces/planet';
   selector: 'app-planet-list',
   template: `
     <div *ngFor="let planet of planets">
-      {{ planet.name }}
+      {{ planet?.name }}
     </div>
   `,
 })

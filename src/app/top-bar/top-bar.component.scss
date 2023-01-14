@@ -14,8 +14,8 @@ a {
 
 .star-wars-h1 {
   text-shadow: -2px 2px black, 2px 2px black, -2px -2px black, 2px -2px black;
-  color: white;
-  // color: $goldTitle;
+  // color: white;
+  color: $goldTitle;
   &:active {
     color: $lightsaber-color;
   }
