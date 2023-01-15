@@ -2,6 +2,13 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Planet } from './interfaces/planet';
 
+export interface ApiResponse {
+  count: number;
+  next: string;
+  previous: string;
+  results: Planet[];
+}
+
 @Injectable({
   providedIn: 'root',
 })
@@ -13,6 +20,6 @@ export class PlanetService {
   }
 
   getPlanets() {
-    return this.http.get<Planet[]>(`https://swapi.dev/api/planets/`);
+    return this.http.get<ApiResponse>(`https://swapi.dev/api/planets/`);
   }
 }

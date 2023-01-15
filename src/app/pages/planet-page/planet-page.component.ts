@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Planet } from 'src/app/interfaces/planet';
 import { PlanetService } from '../../planet.service';
-import { PlanetListComponent } from 'src/app/planet-list/planet-list.component';
 
 @Component({
   selector: 'app-planet',
@@ -19,7 +18,8 @@ export class PlanetPageComponent {
 
   getPlanets() {
     this.planetService.getPlanets().subscribe((planets) => {
-      this.planets = Object.values(planets);
+      console.log(planets);
+      this.planets = planets.results;
     });
   }
 }

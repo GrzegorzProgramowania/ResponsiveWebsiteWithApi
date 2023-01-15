@@ -7,17 +7,17 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 })
 export class HeaderComponent {
   menuVisible: boolean = false;
-
+  showPlanets: boolean = false;
   ngOnInit() {
     this.onLoad();
   }
 
   onLoad() {
-    var audio = new Audio('/assets/sounds/StarWars.mp3');
-    audio.play();
+    // var audio = new Audio('/assets/sounds/StarWars.mp3');
+    // audio.play();
 
     setTimeout(function () {
-      audio.pause();
+      // audio.pause();
     }, 8500);
   }
 
@@ -25,6 +25,7 @@ export class HeaderComponent {
   audio!: ElementRef<HTMLAudioElement>;
 
   playSound() {
+    return;
     this.audio.nativeElement.play();
     setTimeout(() => {
       this.audio.nativeElement.pause();

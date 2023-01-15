@@ -14,7 +14,7 @@ $goldTitle: #fdb813;
 .navbar-nav {
   .nav-link {
     color: white;
-    &:active {
+    &.active {
       color: $lightsaber-color;
     }
     &:hover,
