@@ -22,6 +22,7 @@ import { PlanetPageComponent } from './pages/planet-page/planet-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PlanetListComponent } from './planet-list/planet-list.component';
 import { UserPageComponent } from './user-page/user-page.component';
+import { PlanetListItemComponent } from './planet-list-item/planet-list-item.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { UserPageComponent } from './user-page/user-page.component';
     PlanetPageComponent,
     PlanetListComponent,
     UserPageComponent,
+    PlanetListItemComponent,
   ],
   imports: [
     BrowserModule,
