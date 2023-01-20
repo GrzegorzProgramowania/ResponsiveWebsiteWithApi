@@ -1,18 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutUsPageComponent } from './pages/about-us-page/about-us-page.component';
-import { ContactPageComponent } from './pages/contact-page/contact-page.component';
-import { HistoryPageComponent } from './pages/history-page/history-page.component';
+import { PeoplePageComponent } from './pages/people-page/people-page.component';
+import { FilmsPageComponent } from './pages/films-page/films-page.component';
+import { SpeciesPageComponent } from './pages/species-page/species-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { PlanetPageComponent } from './pages/planet-page/planet-page.component';
+import { StarshipsPageComponent } from './pages/starships-page/starships-page.component';
+import { VehiclesPageComponent } from './pages/vehicles-page/vehicles-page.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomePageComponent },
-  { path: 'contact', component: ContactPageComponent },
-  { path: 'about-us', component: AboutUsPageComponent },
-  { path: 'history', component: HistoryPageComponent },
+  { path: 'Films', component: FilmsPageComponent },
+  { path: 'People', component: PeoplePageComponent },
+  { path: 'Species', component: SpeciesPageComponent },
   { path: 'planets', component: PlanetPageComponent },
+  { path: 'Starships', component: StarshipsPageComponent },
+  { path: 'Vehicles', component: VehiclesPageComponent },
 ];
 
 @NgModule({

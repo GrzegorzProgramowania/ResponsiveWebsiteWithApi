@@ -38,10 +38,10 @@
       >
         <a
           class="nav-link"
-          routerLink="contact"
+          routerLink="Films"
           routerLinkActive="active"
           aria-current="page"
-          >Contact</a
+          >Films</a
         >
       </li>
       <li
@@ -50,10 +50,10 @@
       >
         <a
           class="nav-link"
-          routerLink="about-us"
+          routerLink="People"
           routerLinkActive="active"
           aria-current="page"
-          >About Us</a
+          >People</a
         >
       </li>
       <li
@@ -62,10 +62,10 @@
       >
         <a
           class="nav-link"
-          routerLink="history"
+          routerLink="Species"
           routerLinkActive="active"
           aria-current="page"
-          >History</a
+          >Species</a
         >
       </li>
       <li
@@ -78,6 +78,30 @@
           routerLinkActive="active"
           aria-current="page"
           >Planets</a
+        >
+      </li>
+      <li
+        (click)="playSound(); menuVisible = false"
+        class="nav-item p-2 bd-highlight"
+      >
+        <a
+          class="nav-link"
+          routerLink="Starships"
+          routerLinkActive="active"
+          aria-current="page"
+          >Starships</a
+        >
+      </li>
+      <li
+        (click)="playSound(); menuVisible = false"
+        class="nav-item p-2 bd-highlight"
+      >
+        <a
+          class="nav-link"
+          routerLink="Vehicles"
+          routerLinkActive="active"
+          aria-current="page"
+          >Vehicles</a
         >
       </li>
       <form class="d-flex" id="Top">
@@ -105,28 +129,28 @@
         <li (click)="playSound()" class="nav-item p-2 bd-highlight">
           <a
             class="nav-link"
-            routerLink="contact"
+            routerLink="Films"
             routerLinkActive="active"
             aria-current="page"
-            >Contact</a
+            >Films</a
           >
         </li>
         <li (click)="playSound()" class="nav-item p-2 bd-highlight">
           <a
             class="nav-link"
-            routerLink="about-us"
+            routerLink="People"
             routerLinkActive="active"
             aria-current="page"
-            >About Us</a
+            >People</a
           >
         </li>
         <li (click)="playSound()" class="nav-item p-2 bd-highlight">
           <a
             class="nav-link"
-            routerLink="history"
+            routerLink="Species"
             routerLinkActive="active"
             aria-current="page"
-            >History</a
+            >Species</a
           >
         </li>
         <!-- showPlanets = !showPlanets; -->
@@ -141,7 +165,30 @@
             aria-current="page"
             >Planets</a
           >
-          <!-- <div *ngIf="showPlanets">Lista planet</div> -->
+        </li>
+        <li
+          (click)="playSound(); menuVisible = false"
+          class="nav-item p-2 bd-highlight"
+        >
+          <a
+            class="nav-link"
+            routerLink="Starships"
+            routerLinkActive="active"
+            aria-current="page"
+            >Starships</a
+          >
+        </li>
+        <li
+          (click)="playSound(); menuVisible = false"
+          class="nav-item p-2 bd-highlight"
+        >
+          <a
+            class="nav-link"
+            routerLink="Vehicles"
+            routerLinkActive="active"
+            aria-current="page"
+            >Vehicles</a
+          >
         </li>
       </ul>
       <form class="d-flex">
