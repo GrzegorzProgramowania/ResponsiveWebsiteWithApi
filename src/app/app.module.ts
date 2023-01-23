@@ -22,7 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PlanetListComponent } from './planet-list/planet-list.component';
 import { PlanetListItemComponent } from './planet-list-item/planet-list-item.component';
 import { StarshipsPageComponent } from './pages/starships-page/starships-page.component';
-import { VehiclesPageComponent } from './vehicles-page/vehicles-page.component';
+import { VehiclesPageComponent } from './pages/vehicles-page/vehicles-page.component';
 
 @NgModule({
   declarations: [
