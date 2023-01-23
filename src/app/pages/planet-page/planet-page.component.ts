@@ -3,7 +3,7 @@ import { Planet } from 'src/app/interfaces/planet';
 import { PlanetService } from '../../planet.service';
 
 @Component({
-  selector: 'app-planet',
+  selector: 'app-planet-page',
   templateUrl: './planet-page.component.html',
   styleUrls: ['./planet-page.component.scss'],
 })
