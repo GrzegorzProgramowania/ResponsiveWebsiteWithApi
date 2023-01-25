@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PeoplePageComponent } from './pages/people-page/people-page.component';
+import { HumanPageComponent } from './pages/people-page/people-page.component';
 import { FilmPageComponent } from './pages/film-page/film-page.component';
 import { SpeciesPageComponent } from './pages/species-page/species-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomePageComponent },
   { path: 'Films', component: FilmPageComponent },
-  { path: 'People', component: PeoplePageComponent },
+  { path: 'People', component: HumanPageComponent },
   { path: 'Species', component: SpeciesPageComponent },
   { path: 'planets', component: PlanetPageComponent },
   { path: 'Starships', component: StarshipsPageComponent },

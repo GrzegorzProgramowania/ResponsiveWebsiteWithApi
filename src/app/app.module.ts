@@ -10,7 +10,7 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { FilmPageComponent } from './pages/film-page/film-page.component';
-import { PeoplePageComponent } from './pages/people-page/people-page.component';
+import { HumanPageComponent } from './pages/people-page/people-page.component';
 import { SpeciesPageComponent } from './pages/species-page/species-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -25,13 +25,15 @@ import { StarshipsPageComponent } from './pages/starships-page/starships-page.co
 import { VehiclesPageComponent } from './pages/vehicles-page/vehicles-page.component';
 import { FilmListComponent } from './film-list/film-list.component';
 import { FilmListItemComponent } from './film-list-item/film-list-item.component';
+import { PeopleListComponent } from './people-list/people-list.component';
+import { PeopleListItemComponent } from './people-list-item/people-list-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     FilmPageComponent,
-    PeoplePageComponent,
+    HumanPageComponent,
     SpeciesPageComponent,
     HeaderComponent,
     FooterComponent,
@@ -43,6 +45,8 @@ import { FilmListItemComponent } from './film-list-item/film-list-item.component
     VehiclesPageComponent,
     FilmListComponent,
     FilmListItemComponent,
+    PeopleListComponent,
+    PeopleListItemComponent,
   ],
   imports: [
     BrowserModule,
