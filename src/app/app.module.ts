@@ -27,6 +27,12 @@ import { FilmListComponent } from './film-list/film-list.component';
 import { FilmListItemComponent } from './film-list-item/film-list-item.component';
 import { PeopleListComponent } from './people-list/people-list.component';
 import { PeopleListItemComponent } from './people-list-item/people-list-item.component';
+import { SpeciesListComponent } from './species-list/species-list.component';
+import { SpeciesListItemComponent } from './species-list-item/species-list-item.component';
+import { VehiclesListComponent } from './vehicles-list/vehicles-list.component';
+import { VehiclesListItemComponent } from './vehicles-list-item/vehicles-list-item.component';
+import { StarshipsListComponent } from './starships-list/starships-list.component';
+import { StarshipsListItemComponent } from './starships-list-item/starships-list-item.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +53,12 @@ import { PeopleListItemComponent } from './people-list-item/people-list-item.com
     FilmListItemComponent,
     PeopleListComponent,
     PeopleListItemComponent,
+    SpeciesListComponent,
+    SpeciesListItemComponent,
+    VehiclesListComponent,
+    VehiclesListItemComponent,
+    StarshipsListComponent,
+    StarshipsListItemComponent,
   ],
   imports: [
     BrowserModule,
