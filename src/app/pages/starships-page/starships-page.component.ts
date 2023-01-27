@@ -7,7 +7,7 @@ import { StarshipService } from '../../starships.service';
   templateUrl: './starships-page.component.html',
   styleUrls: ['./starships-page.component.scss'],
 })
-export class StashipPageComponent {
+export class StarshipsPageComponent {
   starships: Starship[] = [];
 
   constructor(private starshipService: StarshipService) {}

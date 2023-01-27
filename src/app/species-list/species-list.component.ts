@@ -6,6 +6,6 @@ import { Type } from '../interfaces/species';
   templateUrl: 'species-list.component.html',
   styleUrls: ['./species-list.component.scss'],
 })
-export class FilmListComponent {
+export class SpeciesListComponent {
   @Input() species: Type[] = [];
 }

@@ -5,6 +5,6 @@ import { Starship } from '../interfaces/starships';
   templateUrl: './starships-list-item.component.html',
   styleUrls: ['./starships-list-item.component.scss'],
 })
-export class StarshipListItemComponent {
+export class StarshipsListItemComponent {
   @Input() starship!: Starship;
 }

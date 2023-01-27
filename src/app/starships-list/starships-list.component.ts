@@ -6,6 +6,6 @@ import { Starship } from '../interfaces/starships';
   templateUrl: 'starships-list.component.html',
   styleUrls: ['./starships-list.component.scss'],
 })
-export class FilmListComponent {
+export class StarshipsListComponent {
   @Input() starships: Starship[] = [];
 }
