@@ -7,4 +7,8 @@ import { Starship } from '../interfaces/starships';
 })
 export class StarshipsListItemComponent {
   @Input() starship!: Starship;
+
+  changeColor() {
+    this.starship.active = !this.starship.active;
+  }
 }
