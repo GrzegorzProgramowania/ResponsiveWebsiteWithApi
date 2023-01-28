@@ -15,6 +15,7 @@ $lightsaber-color: #00bfff;
   &:hover {
     color: $lightsaber-color; //kolor tekstu po najechaniu na blok
   }
+  //nie działa
   .active {
     color: $lightsaber-color;
   }

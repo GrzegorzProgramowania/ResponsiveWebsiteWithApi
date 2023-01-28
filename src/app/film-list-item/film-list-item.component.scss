@@ -19,3 +19,9 @@ $lightsaber-color: #00bfff;
     color: $lightsaber-color;
   }
 }
+
+@media (max-width: 991px) {
+  .card {
+    display: none;
+  }
+}
