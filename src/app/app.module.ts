@@ -13,7 +13,7 @@ import { FilmPageComponent } from './pages/film-page/film-page.component';
 import { HumanPageComponent } from './pages/people-page/people-page.component';
 import { SpeciesPageComponent } from './pages/species-page/species-page.component';
 import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
@@ -23,8 +23,8 @@ import { PlanetListComponent } from './planet-list/planet-list.component';
 import { PlanetListItemComponent } from './planet-list-item/planet-list-item.component';
 import { StarshipsPageComponent } from './pages/starships-page/starships-page.component';
 import { VehiclesPageComponent } from './pages/vehicles-page/vehicles-page.component';
-import { FilmListComponent } from './film-list/film-list.component';
-import { FilmListItemComponent } from './film-list-item/film-list-item.component';
+import { FilmListComponent } from './components/film-list/film-list.component';
+import { FilmListItemComponent } from './components/film-list/film-list-item/film-list-item.component';
 import { PeopleListComponent } from './people-list/people-list.component';
 import { PeopleListItemComponent } from './people-list-item/people-list-item.component';
 import { SpeciesListComponent } from './species-list/species-list.component';
@@ -33,6 +33,7 @@ import { VehiclesListComponent } from './vehicles-list/vehicles-list.component';
 import { VehiclesListItemComponent } from './vehicles-list-item/vehicles-list-item.component';
 import { StarshipsListComponent } from './starships-list/starships-list.component';
 import { StarshipsListItemComponent } from './starships-list-item/starships-list-item.component';
+import { PersonPageComponent } from './pages/person-page/person-page.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { StarshipsListItemComponent } from './starships-list-item/starships-list
     VehiclesListItemComponent,
     StarshipsListComponent,
     StarshipsListItemComponent,
+    PersonPageComponent,
   ],
   imports: [
     BrowserModule,

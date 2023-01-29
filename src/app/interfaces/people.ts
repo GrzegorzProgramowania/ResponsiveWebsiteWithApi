@@ -1,4 +1,5 @@
 export interface Human {
-  id: string;
   name: string;
+  url: string;
+  films: string[];
 }

@@ -16,10 +16,10 @@ export class HumanService {
   constructor(private http: HttpClient) {}
 
   getHuman(id: number) {
-    return this.http.get<Human>(`http https://swapi.dev/api/people/${id}/`);
+    return this.http.get<Human>(`https://swapi.dev/api/people/${id}/`);
   }
 
   getHumans() {
-    return this.http.get<ApiResponse>(`http https://swapi.dev/api/people/`);
+    return this.http.get<ApiResponse>(`https://swapi.dev/api/people/`);
   }
 }

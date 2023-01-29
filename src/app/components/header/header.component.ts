@@ -1,4 +1,10 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { SettingsService } from 'src/app/services/settings.service';
+
+interface MenuItem {
+  path: string;
+  text: string;
+}
 
 @Component({
   selector: 'app-header',
@@ -8,6 +14,21 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 export class HeaderComponent {
   menuVisible: boolean = false;
   showPlanets: boolean = false;
+
+  oldMenuItems = ['home', 'films', 'people', 'species', 'planets', 'starships', 'vehicles'];
+  
+  menuItems: MenuItem[] = [
+    { path: 'home', text: 'Home' },
+    { path: 'films', text: 'Films' },
+    { path: 'people', text: 'People' },
+    { path: 'species', text: 'Species' },
+    { path: 'planets', text: 'Planets' },
+    { path: 'starships', text: 'Starships' },
+    { path: 'vehicles', text: 'Vehicles' },
+  ];
+
+  constructor (public settingsService: SettingsService) {}
+  
   ngOnInit() {
     this.onLoad();
   }

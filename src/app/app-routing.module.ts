@@ -7,16 +7,18 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { PlanetPageComponent } from './pages/planet-page/planet-page.component';
 import { StarshipsPageComponent } from './pages/starships-page/starships-page.component';
 import { VehiclesPageComponent } from './pages/vehicles-page/vehicles-page.component';
+import { PersonPageComponent } from './pages/person-page/person-page.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomePageComponent },
-  { path: 'Films', component: FilmPageComponent },
-  { path: 'People', component: HumanPageComponent },
-  { path: 'Species', component: SpeciesPageComponent },
+  { path: 'films', component: FilmPageComponent, title: 'Films' },
+  { path: 'people', component: HumanPageComponent, title: 'People' },
+  { path: 'people/:id', component: PersonPageComponent },
+  { path: 'species', component: SpeciesPageComponent },
   { path: 'planets', component: PlanetPageComponent },
-  { path: 'Starships', component: StarshipsPageComponent },
-  { path: 'Vehicles', component: VehiclesPageComponent },
+  { path: 'starships', component: StarshipsPageComponent },
+  { path: 'vehicles', component: VehiclesPageComponent },
 ];
 
 @NgModule({

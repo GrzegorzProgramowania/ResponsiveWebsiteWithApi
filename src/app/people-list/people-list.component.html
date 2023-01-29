@@ -1,4 +1,5 @@
 <app-people-list-item
   *ngFor="let human of humans"
   [human]="human"
+  routerLink="/people/{{getId(human.url)}}"
 ></app-people-list-item>

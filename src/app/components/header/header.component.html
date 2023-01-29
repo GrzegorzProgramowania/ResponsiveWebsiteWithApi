@@ -1,9 +1,11 @@
 <audio preload id="myAudio" src="/assets/sounds/StarWars.mp3"></audio>
 <audio #audio src="/assets/sounds/lightsabre.mp3"></audio>
 <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <div (click)="settingsService.soundOn = !settingsService.soundOn"
+  >{{settingsService.soundOn}}</div>
   <div class="container-fluid">
-    <a class="navbar-brand" href="#" tooltip="Jestem BabyYodą (tooltipem)"
-      ><img src="assets/img/babyJodaWhite.png" alt="Opis obrazu"
+    <a class="navbar-brand" href="#"
+      ><img src="assets/img/babyJodaWhite.png" alt="BabyYoda"
     /></a>
     <!-- [style.color]="menuVisible ? '#00bfff' : '111213'" -->
     <button
@@ -20,89 +22,15 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="visibleMenu" *ngIf="menuVisible">
-      <li
+      <li *ngFor="let item of menuItems"
         (click)="playSound(); menuVisible = false"
-        class="nav-item p-2 bd-highlight"
-      >
-        <a
-          class="nav-link"
-          routerLink="home"
+        class="nav-item p-2 bd-highlight">
+        <a class="nav-link"
+          [routerLink]="item.path"
           routerLinkActive="active"
-          aria-current="page"
-          >Home</a
-        >
-      </li>
-      <li
-        (click)="playSound(); menuVisible = false"
-        class="nav-item p-2 bd-highlight"
-      >
-        <a
-          class="nav-link"
-          routerLink="Films"
-          routerLinkActive="active"
-          aria-current="page"
-          >Films</a
-        >
-      </li>
-      <li
-        (click)="playSound(); menuVisible = false"
-        class="nav-item p-2 bd-highlight"
-      >
-        <a
-          class="nav-link"
-          routerLink="People"
-          routerLinkActive="active"
-          aria-current="page"
-          >People</a
-        >
-      </li>
-      <li
-        (click)="playSound(); menuVisible = false"
-        class="nav-item p-2 bd-highlight"
-      >
-        <a
-          class="nav-link"
-          routerLink="Species"
-          routerLinkActive="active"
-          aria-current="page"
-          >Species</a
-        >
-      </li>
-      <li
-        (click)="playSound(); menuVisible = false"
-        class="nav-item p-2 bd-highlight"
-      >
-        <a
-          class="nav-link"
-          routerLink="planets"
-          routerLinkActive="active"
-          aria-current="page"
-          >Planets</a
-        >
-      </li>
-      <li
-        (click)="playSound(); menuVisible = false"
-        class="nav-item p-2 bd-highlight"
-      >
-        <a
-          class="nav-link"
-          routerLink="Starships"
-          routerLinkActive="active"
-          aria-current="page"
-          >Starships</a
-        >
-      </li>
-      <li
-        (click)="playSound(); menuVisible = false"
-        class="nav-item p-2 bd-highlight"
-      >
-        <a
-          class="nav-link"
-          routerLink="Vehicles"
-          routerLinkActive="active"
-          aria-current="page"
-          >Vehicles</a
-        >
+          aria-current="page">
+          {{ item.text }}
+        </a>
       </li>
       <form class="d-flex" id="Top">
         <input
@@ -117,79 +45,16 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
-        <li (click)="playSound()" class="nav-item p-2 bd-highlight">
-          <a
-            class="nav-link"
-            routerLink="home"
-            routerLinkActive="active"
-            aria-current="page"
-            >Home</a
-          >
-        </li>
-        <li (click)="playSound()" class="nav-item p-2 bd-highlight">
-          <a
-            class="nav-link"
-            routerLink="Films"
-            routerLinkActive="active"
-            aria-current="page"
-            >Films</a
-          >
-        </li>
-        <li (click)="playSound()" class="nav-item p-2 bd-highlight">
-          <a
-            class="nav-link"
-            routerLink="People"
-            routerLinkActive="active"
-            aria-current="page"
-            >People</a
-          >
-        </li>
-        <li (click)="playSound()" class="nav-item p-2 bd-highlight">
-          <a
-            class="nav-link"
-            routerLink="Species"
-            routerLinkActive="active"
-            aria-current="page"
-            >Species</a
-          >
-        </li>
-        <!-- showPlanets = !showPlanets; -->
-        <li
-          (click)="playSound(); menuVisible = false"
-          class="nav-item p-2 bd-highlight"
-        >
-          <a
-            class="nav-link"
-            routerLink="planets"
-            routerLinkActive="active"
-            aria-current="page"
-            >Planets</a
-          >
-        </li>
-        <li
-          (click)="playSound(); menuVisible = false"
-          class="nav-item p-2 bd-highlight"
-        >
-          <a
-            class="nav-link"
-            routerLink="Starships"
-            routerLinkActive="active"
-            aria-current="page"
-            >Starships</a
-          >
-        </li>
-        <li
-          (click)="playSound(); menuVisible = false"
-          class="nav-item p-2 bd-highlight"
-        >
-          <a
-            class="nav-link"
-            routerLink="Vehicles"
-            routerLinkActive="active"
-            aria-current="page"
-            >Vehicles</a
-          >
-        </li>
+        <li *ngFor="let item of menuItems"
+        (click)="playSound();"
+        class="nav-item p-2 bd-highlight">
+        <a class="nav-link"
+          [routerLink]="item.path"
+          routerLinkActive="active"
+          aria-current="page">
+          {{ item.text }}
+        </a>
+      </li>
       </ul>
       <form class="d-flex">
         <input
