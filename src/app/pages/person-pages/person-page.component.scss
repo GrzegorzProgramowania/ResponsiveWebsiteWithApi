@@ -1,0 +1,20 @@
+//variables
+$lightsaber-color: #00bfff;
+
+:host {
+  display: block;
+}
+
+.person {
+  // display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white; //kolor tekstu domyślny
+  &:hover {
+    color: $lightsaber-color; //kolor tekstu po najechaniu na blok
+  }
+  .active {
+    color: $lightsaber-color;
+  }
+}
