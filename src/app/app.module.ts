@@ -33,7 +33,7 @@ import { VehiclesListComponent } from './vehicles-list/vehicles-list.component';
 import { VehiclesListItemComponent } from './vehicles-list/vehicles-list-item/vehicles-list-item.component';
 import { StarshipsListComponent } from './starships-list/starships-list.component';
 import { StarshipsListItemComponent } from './starships-list/starships-list-item/starships-list-item.component';
-import { PersonPageComponent } from './pages/person-pages/person-page.component';
+import { PersonPageComponent } from './pages/people-pages/person-pages-look/person-page-look.component';
 
 @NgModule({
   declarations: [

@@ -8,5 +8,5 @@ import { Film } from '../../../interfaces/film';
 export class FilmListItemComponent {
   @Input() film!: Film;
 
-  menuVisible: boolean = false;
+  // menuVisible: boolean = false;
 }

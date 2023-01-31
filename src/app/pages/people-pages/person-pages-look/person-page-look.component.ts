@@ -4,9 +4,9 @@ import { Human } from 'src/app/interfaces/people';
 import { HumanService } from 'src/app/services/people.service';
 
 @Component({
-  selector: 'app-person-page',
-  templateUrl: './person-page.component.html',
-  styleUrls: ['./person-page.component.scss'],
+  selector: 'app-person-page-look',
+  templateUrl: './person-page-look.component.html',
+  styleUrls: ['./person-page-look.component.scss'],
 })
 export class PersonPageComponent {
   id: number = null;

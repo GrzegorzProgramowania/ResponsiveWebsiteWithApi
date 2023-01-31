@@ -7,7 +7,7 @@ import { HomePageComponent } from './pages/home-pages/home-page.component';
 import { PlanetPageComponent } from './pages/planet-pages/planet-page.component';
 import { StarshipsPageComponent } from './pages/starships-pages/starships-page.component';
 import { VehiclesPageComponent } from './pages/vehicles-pages/vehicles-page.component';
-import { PersonPageComponent } from './pages/person-pages/person-page.component';
+import { PersonPageComponent } from './pages/people-pages/person-pages-look/person-page-look.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
