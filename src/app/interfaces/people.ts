@@ -10,6 +10,7 @@ export interface Human {
   birth_year: string;
   gender: string;
   homeworld: string;
+  //empty
   species: string[];
   vehicles: string[];
   starships: string[];

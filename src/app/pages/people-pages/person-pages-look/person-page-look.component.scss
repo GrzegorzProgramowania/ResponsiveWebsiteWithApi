@@ -5,14 +5,30 @@ $lightsaber-color: #00bfff;
   display: block;
 }
 
-.person {
-  // display: flex;
-  align-items: center;
-  justify-content: center;
+.person-card {
+  background-color: #2b2b2b;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  margin: 20px auto;
+  color: white;
+  font-family: "Star Jedi", sans-serif;
+}
+
+.person-title {
+  font-size: 24px;
+  font-weight: bold;
   text-align: center;
-  color: white; //kolor tekstu domyślny
+  margin-bottom: 20px;
+}
+
+.person-item {
+  font-size: 18px;
+  margin-bottom: 10px;
+  //kolor tekstu po najechaniu na blok
   &:hover {
-    color: $lightsaber-color; //kolor tekstu po najechaniu na blok
+    color: $lightsaber-color;
   }
   .active {
     color: $lightsaber-color;

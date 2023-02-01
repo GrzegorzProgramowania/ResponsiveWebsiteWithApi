@@ -34,6 +34,7 @@ import { VehiclesListItemComponent } from './vehicles-list/vehicles-list-item/ve
 import { StarshipsListComponent } from './starships-list/starships-list.component';
 import { StarshipsListItemComponent } from './starships-list/starships-list-item/starships-list-item.component';
 import { PersonPageComponent } from './pages/people-pages/person-pages-look/person-page-look.component';
+import { LoaderComponentComponent } from './components/loader-component/loader-component.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +62,7 @@ import { PersonPageComponent } from './pages/people-pages/person-pages-look/pers
     StarshipsListComponent,
     StarshipsListItemComponent,
     PersonPageComponent,
+    LoaderComponentComponent,
   ],
   imports: [
     BrowserModule,

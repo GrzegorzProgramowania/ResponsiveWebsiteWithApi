@@ -8,6 +8,7 @@ import { HumanService } from 'src/app/services/people.service';
   styleUrls: ['./people-page.component.scss'],
 })
 export class HumanPageComponent {
+  showSpinner = false;
   humans: Human[] = [];
 
   constructor(private humanService: HumanService) {}
@@ -17,9 +18,11 @@ export class HumanPageComponent {
   }
 
   getHumans() {
+    this.showSpinner = true;
     this.humanService.getHumans().subscribe((humans) => {
       console.log(humans);
       this.humans = humans.results;
+      this.showSpinner = false;
     });
   }
 }
