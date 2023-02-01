@@ -33,6 +33,10 @@ img {
   app-footer {
     font-size: 18px;
   }
+  .btn-floating {
+    margin: 10 auto !important;
+    width: 40px;
+  }
 }
 /*DESKTOP XL*/
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -55,6 +59,10 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
+  .btn-floating {
+    margin: 10 auto !important;
+    width: 40px;
+  }
 }
 
 /*SMALL DEVICES*/
@@ -68,9 +76,8 @@ img {
     margin-right: auto;
   }
   .btn-floating {
-    display: block;
-    margin: 0 auto !important;
-    width: 50px;
+    margin: 10 auto !important;
+    width: 40px;
   }
 }
 
@@ -85,9 +92,8 @@ img {
     margin-right: auto;
   }
   .btn-floating {
-    display: block;
-    margin: 0 auto !important;
-    width: 50px;
+    margin: 10 auto !important;
+    width: 40px;
   }
 }
 
@@ -101,11 +107,23 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
+  // .btn-floating-container {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
+
+  // .btn-floating {
+  //   display: block;
+  //   margin: 10px;
+  //   width: 50px;
+  // }
   .btn-floating {
-    display: block;
-    margin: 0 auto !important;
-    width: 50px;
+    margin: 10 auto !important;
+    width: 40px;
   }
+
   // .visibleMenu {
   //   margin: 0px;
   //   padding: 0px;
