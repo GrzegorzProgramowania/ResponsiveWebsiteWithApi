@@ -1,1 +1,19 @@
-<p>film-page-look works!</p>
+<div *ngIf="film">
+  <div class="person-card">
+    <div class="person-title">Star Wars Film</div>
+    <div class="person-item">Title: {{ film.title }}</div>
+    <div class="person-item">Characters: {{ film.characters }}</div>
+    <div class="person-item">Created: {{ film.created }}</div>
+    <div class="person-item">Director: {{ film.director }}</div>
+    <div class="person-item">Edited: {{ film.edited }}</div>
+    <div class="person-item">Episode_id: {{ film.episode_id }}</div>
+    <div class="person-item">Opening_crawl {{ film.opening_crawl }}</div>
+    <div class="person-item">Planets: {{ film.planets }}</div>
+    <div class="person-item">Producer: {{ film.producer }}</div>
+    <div class="person-item">Release_date: {{ film.release_date }}</div>
+    <div class="person-item">Species: {{ film.species }}</div>
+    <div class="person-item">Starships: {{ film.starships }}</div>
+    <div class="person-item">Url: {{ film.url }}</div>
+    <div class="person-item">Vehicles: {{ film.vehicles }}</div>
+  </div>
+</div>
