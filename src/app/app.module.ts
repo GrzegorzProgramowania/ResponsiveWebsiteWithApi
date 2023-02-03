@@ -35,6 +35,11 @@ import { StarshipsListComponent } from './starships-list/starships-list.componen
 import { StarshipsListItemComponent } from './starships-list/starships-list-item/starships-list-item.component';
 import { PersonPageComponent } from './pages/people-pages/person-pages-look/person-page-look.component';
 import { LoaderComponentComponent } from './components/loader-component/loader-component.component';
+import { FilmPageLookComponent } from './pages/film-pages/film-page-look/film-page-look.component';
+import { PlanetPageLookComponent } from './pages/planet-pages/planet-page-look/planet-page-look.component';
+import { SpeciesPageLookComponent } from './pages/species-pages/species-page-look/species-page-look.component';
+import { StarshipPageLookComponent } from './pages/starships-pages/starship-page-look/starship-page-look.component';
+import { VehiclePageLookComponent } from './pages/vehicles-pages/vehicle-page-look/vehicle-page-look.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +68,7 @@ import { LoaderComponentComponent } from './components/loader-component/loader-c
     StarshipsListItemComponent,
     PersonPageComponent,
     LoaderComponentComponent,
+    FilmPageLookComponent,
   ],
   imports: [
     BrowserModule,
