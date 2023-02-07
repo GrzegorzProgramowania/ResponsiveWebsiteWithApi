@@ -8,4 +8,12 @@ import { Planet } from '../interfaces/planet';
 })
 export class PlanetListComponent {
   @Input() planets: Planet[] = [];
+
+  getId(url: string): string {
+    console.log(url);
+    const regex = /^https:\/\/swapi\.dev\/api\/people\/(.+)\/$/;
+    const match = url.match(regex);
+    console.log('match', match);
+    return match[1];
+  }
 }
