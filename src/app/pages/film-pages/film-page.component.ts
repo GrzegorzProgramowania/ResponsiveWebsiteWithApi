@@ -8,6 +8,7 @@ import { FilmService } from '../../services/film.service';
   styleUrls: ['./film-page.component.scss'],
 })
 export class FilmPageComponent {
+  // showSpinner = false;
   films: Film[] = [];
 
   constructor(private filmService: FilmService) {}
@@ -17,9 +18,11 @@ export class FilmPageComponent {
   }
 
   getFilms() {
+    // this.showSpinner = true;
     this.filmService.getFilms().subscribe((films) => {
       console.log(films);
       this.films = films.results;
+      // this.showSpinner = false;
     });
   }
 }

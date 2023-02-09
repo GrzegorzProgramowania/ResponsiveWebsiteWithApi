@@ -33,7 +33,7 @@ import { VehiclesListComponent } from './vehicles-list/vehicles-list.component';
 import { VehiclesListItemComponent } from './vehicles-list/vehicles-list-item/vehicles-list-item.component';
 import { StarshipsListComponent } from './starships-list/starships-list.component';
 import { StarshipsListItemComponent } from './starships-list/starships-list-item/starships-list-item.component';
-import { PersonPageComponent } from './pages/people-pages/person-pages-look/person-page-look.component';
+import { PersonPageLookComponent } from './pages/people-pages/person-pages-look/person-page-look.component';
 import { LoaderComponentComponent } from './components/loader-component/loader-component.component';
 import { FilmPageLookComponent } from './pages/film-pages/film-page-look/film-page-look.component';
 import { PlanetPageLookComponent } from './pages/planet-pages/planet-page-look/planet-page-look.component';
@@ -66,7 +66,7 @@ import { VehiclePageLookComponent } from './pages/vehicles-pages/vehicle-page-lo
     VehiclesListItemComponent,
     StarshipsListComponent,
     StarshipsListItemComponent,
-    PersonPageComponent,
+    PersonPageLookComponent,
     LoaderComponentComponent,
     FilmPageLookComponent,
   ],

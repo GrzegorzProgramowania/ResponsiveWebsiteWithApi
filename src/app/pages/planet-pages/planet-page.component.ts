@@ -8,6 +8,7 @@ import { PlanetService } from '../../services/planet.service';
   styleUrls: ['./planet-page.component.scss'],
 })
 export class PlanetPageComponent {
+  showSpinner = false;
   planets: Planet[] = [];
 
   constructor(private planetService: PlanetService) {}
@@ -17,9 +18,11 @@ export class PlanetPageComponent {
   }
 
   getPlanets() {
+    this.showSpinner = true;
     this.planetService.getPlanets().subscribe((planets) => {
       console.log(planets);
       this.planets = planets.results;
+      this.showSpinner = false;
     });
   }
 }

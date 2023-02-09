@@ -8,7 +8,7 @@ import { HumanService } from 'src/app/services/people.service';
   templateUrl: './person-page-look.component.html',
   styleUrls: ['./person-page-look.component.scss'],
 })
-export class PersonPageComponent {
+export class PersonPageLookComponent {
   id: number = null;
   person: Human;
 

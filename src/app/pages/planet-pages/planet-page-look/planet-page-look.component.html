@@ -1,1 +1,20 @@
-<p>planet-page-look works!</p>
+<div *ngIf="planet">
+  <div class="person-card">
+    <div class="person-title">Star Wars Planet</div>
+    <div class="person-item">Id: {{ planet.id }}</div>
+    <div class="person-item">Name: {{ planet.name }}</div>
+    <div class="person-item">Url: {{ planet.url }}</div>
+    <div class="person-item">Climate: {{ planet.climate }}</div>
+    <div class="person-item">Created: {{ planet.created }}</div>
+    <div class="person-item">Diametr: {{ planet.diameter }}</div>
+    <div class="person-item">Edited: {{ planet.edited }}</div>
+    <div class="person-item">Films: {{ planet.films }}</div>
+    <div class="person-item">Gravity: {{ planet.gravity }}</div>
+    <div class="person-item">Orbital period: {{ planet.orbital_period }}</div>
+    <div class="person-item">Population: {{ planet.population }}</div>
+    <div class="person-item">Residents: {{ planet.population }}</div>
+    <div class="person-item">Rotation Period: {{ planet.rotation_period }}</div>
+    <div class="person-item">Surface Water: {{ planet.surface_water }}</div>
+    <div class="person-item">Terrain: {{ planet.terrain }}</div>
+  </div>
+</div>

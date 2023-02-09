@@ -17,7 +17,7 @@ export class FilmPageLookComponent {
     this.id = this.route.snapshot.params['id'];
     this.filmService.getFilm(this.id).subscribe((film) => {
       this.film = film;
-      console.log('person', film);
+      console.log('film', film);
     });
   }
 }
