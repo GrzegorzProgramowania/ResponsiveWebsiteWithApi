@@ -1,5 +1,5 @@
 <app-planet-list-item
   *ngFor="let planet of planets"
   [planet]="planet"
-  routerLink="/planet/{{ getId(planet.url) }}"
+  routerLink="/planets/{{ getId(planet.url) }}"
 ></app-planet-list-item>

@@ -69,6 +69,10 @@ import { VehiclePageLookComponent } from './pages/vehicles-pages/vehicle-page-lo
     PersonPageLookComponent,
     LoaderComponentComponent,
     FilmPageLookComponent,
+    PlanetPageLookComponent,
+    SpeciesPageLookComponent,
+    StarshipPageLookComponent,
+    VehiclePageLookComponent,
   ],
   imports: [
     BrowserModule,

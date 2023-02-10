@@ -1,1 +1,32 @@
-<p>starship-page-look works!</p>
+<div *ngIf="starships">
+  <div class="person-card">
+    <div class="person-title">Star Wars Starship</div>
+    <div class="person-item">Active: {{ starships.active }}</div>
+    <div class="person-item">Id: {{ starships.id }}</div>
+    <div class="person-item">Name: {{ starships.name }}</div>
+    <div class="person-item">MGLT: {{ starships.MGLT }}</div>
+    <div class="person-item">
+      Cargo_capacity: {{ starships.cargo_capacity }}
+    </div>
+    <div class="person-item">Consumables: {{ starships.consumables }}</div>
+    <div class="person-item">
+      Cost_in_credits: {{ starships.cost_in_credits }}
+    </div>
+    <div class="person-item">Created: {{ starships.created }}</div>
+    <div class="person-item">Crew: {{ starships.crew }}</div>
+    <div class="person-item">Edited: {{ starships.edited }}</div>
+    <div class="person-item">Length: {{ starships.length }}</div>
+    <div class="person-item">Manufacturer: {{ starships.manufacturer }}</div>
+    <div class="person-item">
+      Max_atmosphering_speed: {{ starships.max_atmosphering_speed }}
+    </div>
+    <div class="person-item">Model: {{ starships.model }}</div>
+    <div class="person-item">Passengers: {{ starships.passengers }}</div>
+    <div class="person-item">Films: {{ starships.films }}</div>
+    <div class="person-item">Pilots: {{ starships.pilots }}</div>
+    <div class="person-item">
+      Starship_class: {{ starships.starship_class }}
+    </div>
+    <div class="person-item">Url: {{ starships.url }}</div>
+  </div>
+</div>

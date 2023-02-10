@@ -1,1 +1,24 @@
-<p>species-page-look works!</p>
+<div *ngIf="species">
+  <div class="person-card">
+    <div class="person-title">Star Wars Type</div>
+    <div class="person-item">Id: {{ species.id }}</div>
+    <div class="person-item">Name:</div>
+    average_height: number;
+    <div class="person-item">Average_height: {{species.}}</div>
+    <div class="person-item">
+      Average_lifespan: {{ species.average_lifespan }}
+    </div>
+    <div class="person-item">Classification: {{ species.classification }}</div>
+    <div class="person-item">Created: {{ species.created }}</div>
+    <div class="person-item">Designation: {{ species.designation }}</div>
+    <div class="person-item">Edited: {{ species.edited }}</div>
+    <div class="person-item">Eye_colors: {{ species.eye_colors }}</div>
+    <div class="person-item">Hair_colors: {{ species.hair_colors }}</div>
+    <div class="person-item">Homeworld: {{ species.homeworld }}</div>
+    <div class="person-item">Language: {{ species.language }}</div>
+    <div class="person-item">People: {{ species.people }}</div>
+    <div class="person-item">Films: {{ species.films }}</div>
+    <div class="person-item">Skin_colors: {{ species.skin_colors }}</div>
+    <div class="person-item">Url: {{ species.url }}</div>
+  </div>
+</div>
