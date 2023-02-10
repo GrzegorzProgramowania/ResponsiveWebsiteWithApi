@@ -8,6 +8,7 @@ import { SpeciesService } from '../../services/species.service';
   styleUrls: ['./species-page.component.scss'],
 })
 export class SpeciesPageComponent {
+  showSpinner = false;
   species: Type[] = [];
 
   constructor(private speciesService: SpeciesService) {}
@@ -17,9 +18,11 @@ export class SpeciesPageComponent {
   }
 
   getTypes() {
+    this.showSpinner = true;
     this.speciesService.getTypes().subscribe((species) => {
       console.log(species);
       this.species = species.results;
+      this.showSpinner = false;
     });
   }
 }

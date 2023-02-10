@@ -8,6 +8,7 @@ import { VehicleService } from '../../services/vehicles.service';
   styleUrls: ['./vehicles-page.component.scss'],
 })
 export class VehiclesPageComponent {
+  showSpinner = false;
   vehicles: Vehicle[] = [];
 
   constructor(private vehicleService: VehicleService) {}
@@ -17,9 +18,11 @@ export class VehiclesPageComponent {
   }
 
   getVehicles() {
+    this.showSpinner = true;
     this.vehicleService.getVehicles().subscribe((vehicles) => {
       console.log(vehicles);
       this.vehicles = vehicles.results;
+      this.showSpinner = false;
     });
   }
 }

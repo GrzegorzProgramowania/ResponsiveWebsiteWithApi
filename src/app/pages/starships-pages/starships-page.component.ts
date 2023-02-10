@@ -8,6 +8,7 @@ import { StarshipService } from '../../services/starships.service';
   styleUrls: ['./starships-page.component.scss'],
 })
 export class StarshipsPageComponent {
+  showSpinner = false;
   starships: Starship[] = [];
 
   constructor(private starshipService: StarshipService) {}
@@ -17,9 +18,11 @@ export class StarshipsPageComponent {
   }
 
   getStarships() {
+    this.showSpinner = true;
     this.starshipService.getStarships().subscribe((starships) => {
       console.log(starships);
       this.starships = starships.results;
+      this.showSpinner = false;
     });
   }
 }

@@ -8,4 +8,12 @@ import { Starship } from '../interfaces/starships';
 })
 export class StarshipsListComponent {
   @Input() starships: Starship[] = [];
+
+  getId(url: string): string {
+    console.log(url);
+    const regex = /^https:\/\/swapi\.dev\/api\/starships\/(.+)\/$/;
+    const match = url.match(regex);
+    console.log('match', match);
+    return match[1];
+  }
 }

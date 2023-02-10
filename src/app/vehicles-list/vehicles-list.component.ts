@@ -8,4 +8,12 @@ import { Vehicle } from '../interfaces/vehicles';
 })
 export class VehiclesListComponent {
   @Input() vehicles: Vehicle[] = [];
+
+  getId(url: string): string {
+    console.log(url);
+    const regex = /^https:\/\/swapi\.dev\/api\/vehicles\/(.+)\/$/;
+    const match = url.match(regex);
+    console.log('match', match);
+    return match[1];
+  }
 }

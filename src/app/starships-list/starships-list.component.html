@@ -1,4 +1,5 @@
 <app-starships-list-item
   *ngFor="let starship of starships"
   [starship]="starship"
+  routerLink="/starships/{{ getId(starship.url) }}"
 ></app-starships-list-item>

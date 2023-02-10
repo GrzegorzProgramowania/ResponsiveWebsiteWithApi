@@ -1,4 +1,5 @@
 <app-vehicles-list-item
   *ngFor="let vehicle of vehicles"
   [vehicle]="vehicle"
+  routerLink="/vehicles/{{ getId(vehicle.url) }}"
 ></app-vehicles-list-item>

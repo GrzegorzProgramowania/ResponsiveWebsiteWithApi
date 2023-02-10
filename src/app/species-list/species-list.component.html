@@ -1,4 +1,5 @@
 <app-species-list-item
   *ngFor="let specie of species"
   [species]="specie"
+  routerLink="/species/{{ getId(specie.url) }}"
 ></app-species-list-item>

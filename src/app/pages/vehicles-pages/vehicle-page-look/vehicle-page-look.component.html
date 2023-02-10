@@ -1,29 +1,27 @@
-<div *ngIf="vehicles">
+<div *ngIf="vehicle">
   <div class="person-card">
     <div class="person-title">Star Wars Vehicle</div>
-    <div class="person-item">Id : {{ vehicles.id }}</div>
-    <div class="person-item">Name : {{ vehicles.name }}</div>
+    <div class="person-item">Id : {{ vehicle.id }}</div>
+    <div class="person-item">Name : {{ vehicle.name }}</div>
+    <div class="person-item">Cargo_capacity : {{ vehicle.cargo_capacity }}</div>
+    <div class="person-item">Consumables : {{ vehicle.consumables }}</div>
     <div class="person-item">
-      Cargo_capacity : {{ vehicles.cargo_capacity }}
+      Cost_in_credits : {{ vehicle.cost_in_credits }}
     </div>
-    <div class="person-item">Consumables : {{ vehicles.consumables }}</div>
-    <div class="person-item">
-      Cost_in_credits : {{ vehicles.cost_in_credits }}
-    </div>
-    <div class="person-item">Created : {{ vehicles.created }}</div>
+    <div class="person-item">Created : {{ vehicle.created }}</div>
 
-    <div class="person-item">Crew : {{ vehicles.crew }}</div>
-    <div class="person-item">Edited : {{ vehicles.edited }}</div>
-    <div class="person-item">Length : {{ vehicles.length }}</div>
-    <div class="person-item">Manufacturer : {{ vehicles.manufacturer }}</div>
+    <div class="person-item">Crew : {{ vehicle.crew }}</div>
+    <div class="person-item">Edited : {{ vehicle.edited }}</div>
+    <div class="person-item">Length : {{ vehicle.length }}</div>
+    <div class="person-item">Manufacturer : {{ vehicle.manufacturer }}</div>
     <div class="person-item">
-      Max_atmosphering_speed : {{ vehicles.max_atmosphering_speed }}
+      Max_atmosphering_speed : {{ vehicle.max_atmosphering_speed }}
     </div>
-    <div class="person-item">Model : {{ vehicles.model }}</div>
-    <div class="person-item">Passengers : {{ vehicles.passengers }}</div>
-    <div class="person-item">Pilots : {{ vehicles.pilots }}</div>
-    <div class="person-item">Films : {{ vehicles.films }}</div>
-    <div class="person-item">Url : {{ vehicles.url }}</div>
-    <div class="person-item">Vehicle_class : {{ vehicles.vehicle_class }}</div>
+    <div class="person-item">Model : {{ vehicle.model }}</div>
+    <div class="person-item">Passengers : {{ vehicle.passengers }}</div>
+    <div class="person-item">Pilots : {{ vehicle.pilots }}</div>
+    <div class="person-item">Films : {{ vehicle.films }}</div>
+    <div class="person-item">Url : {{ vehicle.url }}</div>
+    <div class="person-item">Vehicle_class : {{ vehicle.vehicle_class }}</div>
   </div>
 </div>
