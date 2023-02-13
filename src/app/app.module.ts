@@ -15,7 +15,7 @@ import { SpeciesPageComponent } from './pages/species-pages/species-page.compone
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { TopBarComponent } from './top-bar/top-bar.component';
+import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { PlanetPageComponent } from './pages/planet-pages/planet-page.component';
 import { HttpClientModule } from '@angular/common/http';

@@ -1,5 +1,5 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
-import { SettingsService } from 'src/app/services/settings.service';
+import { Component, ElementRef, ViewChild } from "@angular/core";
+import { SettingsService } from "src/app/services/settings.service";
 
 interface MenuItem {
   path: string;
@@ -7,28 +7,36 @@ interface MenuItem {
 }
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss'],
+  selector: "app-header",
+  templateUrl: "./header.component.html",
+  styleUrls: ["./header.component.scss"],
 })
 export class HeaderComponent {
   menuVisible: boolean = false;
   showPlanets: boolean = false;
 
-  oldMenuItems = ['home', 'films', 'people', 'species', 'planets', 'starships', 'vehicles'];
-  
-  menuItems: MenuItem[] = [
-    { path: 'home', text: 'Home' },
-    { path: 'films', text: 'Films' },
-    { path: 'people', text: 'People' },
-    { path: 'species', text: 'Species' },
-    { path: 'planets', text: 'Planets' },
-    { path: 'starships', text: 'Starships' },
-    { path: 'vehicles', text: 'Vehicles' },
+  oldMenuItems = [
+    "home",
+    "films",
+    "characters",
+    "species",
+    "planets",
+    "starships",
+    "vehicles",
   ];
 
-  constructor (public settingsService: SettingsService) {}
-  
+  menuItems: MenuItem[] = [
+    { path: "home", text: "Home" },
+    { path: "films", text: "Films" },
+    { path: "people", text: "Characters" },
+    { path: "species", text: "Species" },
+    { path: "planets", text: "Planets" },
+    { path: "starships", text: "Starships" },
+    { path: "vehicles", text: "Vehicles" },
+  ];
+
+  constructor(public settingsService: SettingsService) {}
+
   ngOnInit() {
     this.onLoad();
   }
@@ -42,7 +50,7 @@ export class HeaderComponent {
     }, 8500);
   }
 
-  @ViewChild('audio', { static: true })
+  @ViewChild("audio", { static: true })
   audio!: ElementRef<HTMLAudioElement>;
 
   playSound() {
