@@ -1,6 +1,7 @@
 :host {
   display: block;
 }
+
 //variables:
 $lightsaber-color: #00bfff;
 $bgDark: #111213;
@@ -10,12 +11,19 @@ $goldTitle: #fdb813;
   padding: 0;
 }
 .container-fluid {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 30px;
+  margin-bottom: 10px;
 }
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.55);
   border-color: white;
+}
+
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .navbar-nav {
@@ -44,6 +52,7 @@ $goldTitle: #fdb813;
   opacity: 90%;
   color: white;
 }
+
 @media (min-width: 991px) {
   .visibleMenu {
     display: none;
@@ -70,20 +79,3 @@ a {
   justify-content: center;
   margin-bottom: 10px;
 }
-
-// NIE DZIALA ? PEWNIE CO NADPISUJE nie widać ich
-// .navbar-toggler:hover {
-//   color: #00bfff;
-//   border-color: #00bfff;
-//   box-shadow: 0 0 10px #00bfff;
-// }
-// .navbar-toggler span::before,
-// .navbar-toggler span::after {
-//   background-color: #00bfff;
-// }
-
-// .navbar-toggler:active {
-//   color: #00bfff;
-//   border-color: #00bfff;
-//   box-shadow: 0 0 10px #00bfff;
-// }

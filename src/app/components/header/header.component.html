@@ -1,13 +1,13 @@
 <audio preload id="myAudio" src="/assets/sounds/StarWars.mp3"></audio>
 <audio #audio src="/assets/sounds/lightsabre.mp3"></audio>
 <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-  <div (click)="settingsService.soundOn = !settingsService.soundOn"
-  >{{settingsService.soundOn}}</div>
-  <div class="container-fluid">
+  <div (click)="settingsService.soundOn = !settingsService.soundOn"></div>
+  {{ settingsService.soundOn }}
+
+  <div class="container-fluid bg-dark">
     <a class="navbar-brand" href="#"
       ><img src="assets/img/babyJodaWhite.png" alt="BabyYoda"
     /></a>
-    <!-- [style.color]="menuVisible ? '#00bfff' : '111213'" -->
     <button
       id="myButton"
       (click)="menuVisible = !menuVisible"
@@ -22,13 +22,17 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="visibleMenu" *ngIf="menuVisible">
-      <li *ngFor="let item of menuItems"
+      <li
+        *ngFor="let item of menuItems"
         (click)="playSound(); menuVisible = false"
-        class="nav-item p-2 bd-highlight">
-        <a class="nav-link"
+        class="nav-item p-2 bd-highlight"
+      >
+        <a
+          class="nav-link"
           [routerLink]="item.path"
           routerLinkActive="active"
-          aria-current="page">
+          aria-current="page"
+        >
           {{ item.text }}
         </a>
       </li>
@@ -45,16 +49,20 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
-        <li *ngFor="let item of menuItems"
-        (click)="playSound();"
-        class="nav-item p-2 bd-highlight">
-        <a class="nav-link"
-          [routerLink]="item.path"
-          routerLinkActive="active"
-          aria-current="page">
-          {{ item.text }}
-        </a>
-      </li>
+        <li
+          *ngFor="let item of menuItems"
+          (click)="playSound()"
+          class="nav-item p-2 bd-highlight"
+        >
+          <a
+            class="nav-link"
+            [routerLink]="item.path"
+            routerLinkActive="active"
+            aria-current="page"
+          >
+            {{ item.text }}
+          </a>
+        </li>
       </ul>
       <form class="d-flex">
         <input
