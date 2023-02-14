@@ -20,7 +20,7 @@ export interface Film {
   vehicles: [];
 }
 
-// oldApi
+// Old Api interface
 // id: string;
 // title: string;
 // characters: string[];

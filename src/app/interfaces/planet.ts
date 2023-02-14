@@ -4,14 +4,31 @@ export interface Planet {
   url: string;
   climate: string;
   created: string;
-  diameter: number;
+  diameter: string;
   edited: string;
-  films: string[];
-  gravity: number;
+  films: [];
+  gravity: string;
   orbital_period: number;
-  population: number;
-  residents: string[];
-  rotation_period: number;
-  surface_water: number;
+  population: string;
+  residents: [];
+  rotation_period: string;
+  surface_water: string;
   terrain: string;
 }
+
+// Old Api interface
+// id: string;
+// name: string;
+// url: string;
+// climate: string;
+// created: string;
+// diameter: number;
+// edited: string;
+// films: string[];
+// gravity: number;
+// orbital_period: number;
+// population: number;
+// residents: string[];
+// rotation_period: number;
+// surface_water: number;
+// terrain: string;
