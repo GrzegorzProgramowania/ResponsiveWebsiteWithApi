@@ -16,10 +16,10 @@ export class PlanetService {
   constructor(private http: HttpClient) {}
 
   getPlanet(id: number) {
-    return this.http.get<Planet>(`https://swapi.dev/api/planets/${id}/`);
+    return this.http.get<Planet>(`https://swapi.tech/api/planets/${id}/`);
   }
 
   getPlanets() {
-    return this.http.get<ApiResponse>(`https://swapi.dev/api/planets/`);
+    return this.http.get<ApiResponse>(`https://swapi.tech/api/planets/`);
   }
 }

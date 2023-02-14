@@ -11,7 +11,7 @@ export class FilmListComponent {
 
   getId(url: string): string {
     console.log(url);
-    const regex = /^https:\/\/swapi\.dev\/api\/films\/(.+)\/$/;
+    const regex = /^https:\/\/swapi\.tech\/api\/films\/(.+)\/$/;
     const match = url.match(regex);
     console.log("match", match);
     return match[1];

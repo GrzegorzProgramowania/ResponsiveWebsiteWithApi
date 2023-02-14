@@ -16,10 +16,10 @@ export class VehicleService {
   constructor(private http: HttpClient) {}
 
   getVehicle(id: number) {
-    return this.http.get<Vehicle>(`https://swapi.dev/api/vehicles/${id}/`);
+    return this.http.get<Vehicle>(`https://swapi.tech/api/vehicles/${id}/`);
   }
 
   getVehicles() {
-    return this.http.get<ApiResponse>(`https://swapi.dev/api/vehicles/`);
+    return this.http.get<ApiResponse>(`https://swapi.tech/api/vehicles/`);
   }
 }

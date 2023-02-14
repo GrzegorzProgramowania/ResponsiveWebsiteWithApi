@@ -11,7 +11,7 @@ export class SpeciesListComponent {
 
   getId(url: string): string {
     console.log(url);
-    const regex = /^https:\/\/swapi\.dev\/api\/species\/(.+)\/$/;
+    const regex = /^https:\/\/swapi\.tech\/api\/species\/(.+)\/$/;
     const match = url.match(regex);
     console.log('match', match);
     return match[1];

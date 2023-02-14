@@ -11,7 +11,7 @@ export class VehiclesListComponent {
 
   getId(url: string): string {
     console.log(url);
-    const regex = /^https:\/\/swapi\.dev\/api\/vehicles\/(.+)\/$/;
+    const regex = /^https:\/\/swapi\.tech\/api\/vehicles\/(.+)\/$/;
     const match = url.match(regex);
     console.log('match', match);
     return match[1];

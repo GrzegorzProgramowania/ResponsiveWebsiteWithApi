@@ -16,10 +16,10 @@ export class SpeciesService {
   constructor(private http: HttpClient) {}
 
   getType(id: number) {
-    return this.http.get<Type>(`https://swapi.dev/api/species/${id}/`);
+    return this.http.get<Type>(`https://swapi.tech/api/species/${id}/`);
   }
 
   getTypes() {
-    return this.http.get<ApiResponse>(`https://swapi.dev/api/species/`);
+    return this.http.get<ApiResponse>(`https://swapi.tech/api/species/`);
   }
 }

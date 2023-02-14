@@ -11,7 +11,7 @@ export class StarshipsListComponent {
 
   getId(url: string): string {
     console.log(url);
-    const regex = /^https:\/\/swapi\.dev\/api\/starships\/(.+)\/$/;
+    const regex = /^https:\/\/swapi\.tech\/api\/starships\/(.+)\/$/;
     const match = url.match(regex);
     console.log('match', match);
     return match[1];

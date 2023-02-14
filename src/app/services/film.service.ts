@@ -16,10 +16,10 @@ export class FilmService {
   constructor(private http: HttpClient) {}
 
   getFilm(id: number) {
-    return this.http.get<Film>(`https://swapi.dev/api/films/${id}/`);
+    return this.http.get<Film>(`https://swapi.tech/api/films/${id}/`);
   }
 
   getFilms() {
-    return this.http.get<ApiResponse>(`https://swapi.dev/api/films/`);
+    return this.http.get<ApiResponse>(`https://swapi.tech/api/films/`);
   }
 }

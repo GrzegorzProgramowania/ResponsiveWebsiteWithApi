@@ -16,10 +16,10 @@ export class StarshipService {
   constructor(private http: HttpClient) {}
 
   getStarship(id: number) {
-    return this.http.get<Starship>(`https://swapi.dev/api/starships/${id}/`);
+    return this.http.get<Starship>(`https://swapi.tech/api/starships/${id}/`);
   }
 
   getStarships() {
-    return this.http.get<ApiResponse>(`https://swapi.dev/api/starships/`);
+    return this.http.get<ApiResponse>(`https://swapi.tech/api/starships/`);
   }
 }
