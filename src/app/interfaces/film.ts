@@ -2,22 +2,24 @@ import { Data } from '@angular/router';
 
 export interface Film {
   id: string;
-  title: string;
-  characters: [];
-  created: string;
-  director: string;
-  edited: string;
-  episode_id: number;
-  opening_crawl: string;
-  planets: [];
-  producer: string;
-  //data typ data ?
-  release_date: Data;
-  //data string?
-  species: [];
-  starships: [];
-  url: string;
-  vehicles: [];
+  properties: {
+    title: string;
+    characters: [];
+    created: string;
+    director: string;
+    edited: string;
+    episode_id: number;
+    opening_crawl: string;
+    planets: [];
+    producer: string;
+    //data typ data ?
+    release_date: Data;
+    //data string?
+    species: [];
+    starships: [];
+    url: string;
+    vehicles: [];
+  };
 }
 
 // Old Api interface

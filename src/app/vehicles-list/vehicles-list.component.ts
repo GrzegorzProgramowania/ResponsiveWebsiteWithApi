@@ -10,10 +10,22 @@ export class VehiclesListComponent {
   @Input() vehicles: Vehicle[] = [];
 
   getId(url: string): string {
-    console.log(url);
-    const regex = /^https:\/\/swapi\.tech\/api\/vehicles\/(.+)\/$/;
+    if (!url) {
+      return '';
+    }
+    const regex = /^https:\/\/www\.swapi\.tech\/api\/vehicles\/(.+)$/;
     const match = url.match(regex);
-    console.log('match', match);
-    return match[1];
+    if (match && match[1]) {
+      return match[1];
+    }
+    return '';
   }
+  // old regex
+  // getId(url: string): string {
+  //   console.log(url);
+  //   const regex = /^https:\/\/swapi\.tech\/api\/vehicles\/(.+)\/$/;
+  //   const match = url.match(regex);
+  //   console.log('match', match);
+  //   return match[1];
+  // }
 }

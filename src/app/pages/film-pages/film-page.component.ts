@@ -21,7 +21,7 @@ export class FilmPageComponent {
     this.showSpinner = true;
     this.filmService.getFilms().subscribe((films) => {
       console.log(films);
-      this.films = films.results;
+      this.films = films.result;
       this.showSpinner = false;
     });
   }

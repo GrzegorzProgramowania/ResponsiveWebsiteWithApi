@@ -6,7 +6,7 @@ export interface ApiResponse {
   count: number;
   next: string;
   previous: string;
-  results: Film[];
+  result: Film[];
 }
 
 @Injectable({

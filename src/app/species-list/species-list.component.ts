@@ -10,10 +10,22 @@ export class SpeciesListComponent {
   @Input() species: Type[] = [];
 
   getId(url: string): string {
-    console.log(url);
-    const regex = /^https:\/\/swapi\.tech\/api\/species\/(.+)\/$/;
+    if (!url) {
+      return '';
+    }
+    const regex = /^https:\/\/www\.swapi\.tech\/api\/species\/(.+)$/;
     const match = url.match(regex);
-    console.log('match', match);
-    return match[1];
+    if (match && match[1]) {
+      return match[1];
+    }
+    return '';
   }
+
+  // getId(url: string): string {
+  //   console.log(url);
+  //   const regex = /^https:\/\/swapi\.tech\/api\/species\/(.+)\/$/;
+  //   const match = url.match(regex);
+  //   console.log('match', match);
+  //   return match[1];
+  // }
 }
