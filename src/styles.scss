@@ -14,9 +14,42 @@ $lightsaber-color: #00bfff;
 img {
   color: white;
 }
+//////////////////////////////////
+///HUGE SCREENS XXXL >2000px
+@media (min-width: 2000px) {
+}
 
+/////////////////////////////////////
 /*BIG SCREENS XXL*/
 @media (min-width: 1200px) {
+  img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+  .container-fluid {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+
+    .nav-link {
+      margin-right: 30px;
+    }
+  }
+
+  // .navbar-brand {
+  //   padding-top: 0;
+  //   padding-bottom: 0;
+  // }
   app-home-page {
     font-size: 18px;
     height: 1000px;

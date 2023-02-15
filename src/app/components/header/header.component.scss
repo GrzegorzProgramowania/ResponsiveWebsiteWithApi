@@ -7,27 +7,15 @@ $lightsaber-color: #00bfff;
 $bgDark: #111213;
 $goldTitle: #fdb813;
 
-.navbar {
-  padding: 0;
-}
-.container-fluid {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  height: 30px;
-  margin-bottom: 10px;
-}
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.55);
   border-color: white;
 }
 
-.navbar-brand {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
 .navbar-nav {
   .nav-link {
+    // margin-right: 80px; /* zwiększa odstęp między pozycjami */
+
     color: white;
     &.active {
       color: $lightsaber-color;

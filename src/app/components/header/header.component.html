@@ -1,8 +1,8 @@
 <audio preload id="myAudio" src="/assets/sounds/StarWars.mp3"></audio>
 <audio #audio src="/assets/sounds/lightsabre.mp3"></audio>
 <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-  <div (click)="settingsService.soundOn = !settingsService.soundOn"></div>
-  {{ settingsService.soundOn }}
+  <!-- <div (click)="settingsService.soundOn = !settingsService.soundOn"></div>
+  {{ settingsService.soundOn }} -->
 
   <div class="container-fluid bg-dark">
     <a class="navbar-brand" href="#"
@@ -47,12 +47,16 @@
       </form>
     </div>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+    <!-- górne menu -->
+    <div
+      class="collapse navbar-collapse justify-content-center"
+      id="navbarSupportedContent"
+    >
+      <ul class="navbar-nav">
         <li
           *ngFor="let item of menuItems"
           (click)="playSound()"
-          class="nav-item p-2 bd-highlight"
+          class="nav-item"
         >
           <a
             class="nav-link"
