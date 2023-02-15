@@ -1,7 +1,8 @@
 <div *ngIf="person">
   <div class="person-card">
     <div class="person-title">Star Wars Character</div>
-    <div class="person-item">Name: {{ person.name }}</div>
+    <div class="person-item">Name: {{ person.properties.name }}</div>
+    <!-- <div class="person-item">Name: {{ person.name }}</div> -->
     <div class="person-item">Url: {{ person.url }}</div>
     <div class="person-item">Films: {{ person.films }}</div>
     <div class="person-item">Height: {{ person.height }}</div>

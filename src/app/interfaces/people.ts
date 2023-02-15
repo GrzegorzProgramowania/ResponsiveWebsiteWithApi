@@ -1,6 +1,8 @@
 export interface Human {
   id: string;
-  name: string;
+  properties: {
+    name: string;
+  };
   url: string;
   films: [];
   height: number;
