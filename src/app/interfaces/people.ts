@@ -1,26 +1,26 @@
 export interface Human {
   id: string;
-  name: string;
-  // properties: {
-  //   name: string;
-  //   url: string;
-  // };
-  url: string;
-  films: [];
-  height: number;
-  mass: number;
-  hair_color: string;
-  skin_color: string;
-  eye_color: string;
-  birth_year: string;
-  gender: string;
-  homeworld: string;
-  //empty
-  species: [];
-  vehicles: [];
-  starships: [];
-  created: string;
-  edited: string;
+  // name: string;
+  properties: {
+    name: string;
+    url: string;
+  };
+  // url: string;
+  // films: [];
+  // height: number;
+  // mass: number;
+  // hair_color: string;
+  // skin_color: string;
+  // eye_color: string;
+  // birth_year: string;
+  // gender: string;
+  // homeworld: string;
+  // //empty
+  // species: [];
+  // vehicles: [];
+  // starships: [];
+  // created: string;
+  // edited: string;
 }
 
 // Old Api interface

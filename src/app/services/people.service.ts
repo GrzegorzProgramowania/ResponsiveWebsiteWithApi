@@ -7,6 +7,7 @@ export interface ApiResponse {
   next: string;
   previous: string;
   results: Human[];
+  properties: string;
 }
 
 @Injectable({

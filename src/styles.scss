@@ -68,12 +68,28 @@ img {
 }
 /*DESKTOP XL*/
 @media (min-width: 992px) and (max-width: 1199px) {
+  .navbar {
+    padding: 0;
+  }
+  .container-fluid {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
   app-home-page {
     font-size: 18px;
     width: 800px;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
+  }
+  app-footer {
+    font-size: 18px;
+  }
+  .btn-floating {
+    margin: 10 auto !important;
+    width: 40px;
   }
 }
 /*TABLET*/
@@ -108,6 +124,17 @@ img {
 
 /*SMALL DEVICES */
 @media (min-width: 320px) and (max-width: 575px) {
+  .mb-4 {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem !important;
+  }
+  .navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  h2 {
+    margin-bottom: 0rem;
+  }
   app-home-page {
     font-size: 14px;
     width: 320;
@@ -119,38 +146,42 @@ img {
     margin: 10 auto !important;
     width: 40px;
   }
+  img {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 /*VERY SMALL DEVICES */
 @media (min-width: 0px) and (max-width: 319px) {
+  .navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  h2 {
+    margin-bottom: 0rem;
+  }
   app-home-page {
-    font-size: 10px;
+    font-size: 12px;
     width: 300;
     height: 400;
     margin-left: auto;
     margin-right: auto;
   }
-  // .btn-floating-container {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   justify-content: center;
-  //   align-items: center;
-  // }
-
-  // .btn-floating {
-  //   display: block;
-  //   margin: 10px;
-  //   width: 50px;
-  // }
+  img {
+    width: 50px;
+    height: 50px;
+  }
+  .mb-4 {
+    margin-bottom: 0rem !important;
+    //LUB@@@@@@@@@@
+    // margin-bottom: 0.5rem !important;
+  }
   .btn-floating {
     margin: 10 auto !important;
     width: 40px;
   }
 
-  // .visibleMenu {
-  //   margin: 0px;
-  //   padding: 0px;
-  // }
   app-top-bar {
     width: 100%;
     margin: 0;
