@@ -21,6 +21,7 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
+    <!-- HAMBURGER MENU -->
     <div class="visibleMenu" *ngIf="menuVisible">
       <li
         *ngFor="let item of menuItems"
@@ -36,18 +37,22 @@
           {{ item.text }}
         </a>
       </li>
-      <form class="d-flex" id="Top">
-        <input
-          class="form-control me-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button class="btn btn-outline-secondary" type="submit">Search</button>
-      </form>
+      <div class="formContainer">
+        <form class="d-flex" id="Top">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-secondary" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
     </div>
 
-    <!-- górne menu -->
+    <!-- GÓRNE (GŁÓWNE) MENU -->
     <div
       class="collapse navbar-collapse justify-content-center"
       id="navbarSupportedContent"
