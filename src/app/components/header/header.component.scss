@@ -2,6 +2,10 @@
   display: block;
 }
 
+// .yoda {
+//   position: absolute;
+//   right: 0;
+// }
 //variables:
 $lightsaber-color: #00bfff;
 $bgDark: #111213;
@@ -41,7 +45,7 @@ $goldTitle: #fdb813;
   color: white;
 }
 
-@media (min-width: 991px) {
+@media (min-width: 992px) {
   .visibleMenu {
     display: none;
   }

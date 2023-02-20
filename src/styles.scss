@@ -23,8 +23,8 @@ img {
 /*BIG SCREENS XXL*/
 @media (min-width: 1200px) {
   img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
   }
 
   .navbar {
@@ -68,6 +68,10 @@ img {
 }
 /*DESKTOP XL*/
 @media (min-width: 992px) and (max-width: 1199px) {
+  img {
+    width: 50px;
+    height: 50px;
+  }
   .navbar {
     padding: 0;
   }
@@ -98,8 +102,10 @@ img {
 @media (min-width: 768px) and (max-width: 991px) {
   app-home-page {
     font-size: 16px;
-    width: 600px;
-    height: 400px;
+    // width: 600px;
+    height: 30vh;
+    // width: 90vh;
+    // height: 400px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -123,17 +129,38 @@ img {
 
 /*SMALL DEVICES*/
 @media (min-width: 576px) and (max-width: 767px) {
+  .mb-4 {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem !important;
+  }
+  h2 {
+    margin-bottom: 0rem;
+  }
+  .navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
   img {
     width: 50px;
     height: 50px;
   }
   app-home-page {
     font-size: 14px;
-    width: 550px;
-    height: 300px;
+    width: 320;
+    // width: 90vh;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400;
     margin-left: auto;
     margin-right: auto;
   }
+  // app-home-page {
+  //   font-size: 14px;
+  //   width: 550px;
+  //   height: 300px;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  // }
   .btn-floating {
     margin: 10 auto !important;
     width: 40px;
