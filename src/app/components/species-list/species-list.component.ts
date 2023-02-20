@@ -1,24 +1,25 @@
-import { Component, Input } from '@angular/core';
-import { Type } from '../interfaces/species';
+import { Component, Input } from "@angular/core";
+// import { Type } from '../interfaces/species';
+import { Type } from "../../interfaces/species";
 
 @Component({
-  selector: 'app-species-list',
-  templateUrl: 'species-list.component.html',
-  styleUrls: ['./species-list.component.scss'],
+  selector: "app-species-list",
+  templateUrl: "species-list.component.html",
+  styleUrls: ["./species-list.component.scss"],
 })
 export class SpeciesListComponent {
   @Input() species: Type[] = [];
 
   getId(url: string): string {
     if (!url) {
-      return '';
+      return "";
     }
     const regex = /^https:\/\/www\.swapi\.tech\/api\/species\/(.+)$/;
     const match = url.match(regex);
     if (match && match[1]) {
       return match[1];
     }
-    return '';
+    return "";
   }
 
   // getId(url: string): string {

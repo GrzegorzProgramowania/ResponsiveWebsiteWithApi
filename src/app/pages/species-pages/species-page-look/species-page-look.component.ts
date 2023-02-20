@@ -8,6 +8,7 @@ import { SpeciesService } from 'src/app/services/species.service';
   styleUrls: ['./species-page-look.component.scss'],
 })
 export class SpeciesPageLookComponent {
+  showSpinner = false;
   id: number = null;
   species: Type;
 
@@ -15,11 +16,13 @@ export class SpeciesPageLookComponent {
     private route: ActivatedRoute,
     private speciesService: SpeciesService
   ) {
+    this.showSpinner = true;
     console.log(this.route.snapshot.params['id']);
     this.id = this.route.snapshot.params['id'];
     this.speciesService.getType(this.id).subscribe((species) => {
       this.species = species;
       console.log('species', species);
+      this.showSpinner = false;
     });
   }
 }

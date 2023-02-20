@@ -9,6 +9,7 @@ import { PlanetService } from 'src/app/services/planet.service';
   styleUrls: ['./planet-page-look.component.scss'],
 })
 export class PlanetPageLookComponent {
+  showSpinner = false;
   id: number = null;
   planet: Planet;
 
@@ -16,11 +17,13 @@ export class PlanetPageLookComponent {
     private route: ActivatedRoute,
     private planetService: PlanetService
   ) {
+    this.showSpinner = true;
     console.log(this.route.snapshot.params['id']);
     this.id = this.route.snapshot.params['id'];
     this.planetService.getPlanet(this.id).subscribe((planet) => {
       this.planet = planet;
       console.log('planet', planet);
+      this.showSpinner = false;
     });
   }
 }

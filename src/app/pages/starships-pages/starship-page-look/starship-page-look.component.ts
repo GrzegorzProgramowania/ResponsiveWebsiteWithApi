@@ -9,6 +9,7 @@ import { StarshipService } from 'src/app/services/starships.service';
   styleUrls: ['./starship-page-look.component.scss'],
 })
 export class StarshipPageLookComponent {
+  showSpinner = false;
   id: number = null;
   starship: Starship;
 
@@ -16,11 +17,13 @@ export class StarshipPageLookComponent {
     private route: ActivatedRoute,
     private starshipService: StarshipService
   ) {
+    this.showSpinner = true;
     console.log(this.route.snapshot.params['id']);
     this.id = this.route.snapshot.params['id'];
     this.starshipService.getStarship(this.id).subscribe((starship) => {
       this.starship = starship;
       console.log('starship', starship);
+      this.showSpinner = false;
     });
   }
 }
