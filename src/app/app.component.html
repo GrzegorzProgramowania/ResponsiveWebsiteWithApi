@@ -1,6 +1,20 @@
-<app-top-bar></app-top-bar>
+<div
+  [ngClass]="{
+    'bg-dark text-white': !settingsService.colorWhite,
+    'bg-light text-dark': settingsService.colorWhite
+  }"
+>
+  <app-top-bar></app-top-bar>
+  <app-header></app-header>
+  <div class="pageContainer">
+    <router-outlet></router-outlet>
+  </div>
+  <app-footer></app-footer>
+</div>
+
+<!-- <app-top-bar></app-top-bar>
 <app-header></app-header>
 <div class="pageContainer">
   <router-outlet></router-outlet>
 </div>
-<app-footer></app-footer>
+<app-footer></app-footer> -->

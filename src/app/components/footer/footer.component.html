@@ -1,10 +1,21 @@
-<footer class="bg-dark text-center text-white">
+<!-- <footer class="bg-dark text-center text-white"> -->
+<footer
+  class="text-center"
+  [ngClass]="{
+    'bg-dark text-white': !settingsService.colorWhite,
+    'bg-light text-dark': settingsService.colorWhite
+  }"
+>
   <!-- Grid container -->
   <div class="container p-1 pb-0">
     <!-- Section: Social media -->
     <section class="mb-4">
       <!-- Facebook -->
       <a
+        [ngClass]="{
+          'bg-dark text-white btn-outline-light': !settingsService.colorWhite,
+          'bg-light text-dark btn-outline-dark': settingsService.colorWhite
+        }"
         mdbRipple
         class="btn btn-outline-light btn-floating m-1"
         href="#!"
@@ -14,6 +25,10 @@
 
       <!-- Twitter -->
       <a
+        [ngClass]="{
+          'bg-dark text-white btn-outline-light': !settingsService.colorWhite,
+          'bg-light text-dark btn-outline-dark': settingsService.colorWhite
+        }"
         mdbRipple
         class="btn btn-outline-light btn-floating m-1"
         href="#!"
@@ -23,6 +38,10 @@
 
       <!-- Google -->
       <a
+        [ngClass]="{
+          'bg-dark text-white btn-outline-light': !settingsService.colorWhite,
+          'bg-light text-dark btn-outline-dark': settingsService.colorWhite
+        }"
         mdbRipple
         class="btn btn-outline-light btn-floating m-1"
         href="#!"
@@ -32,6 +51,10 @@
 
       <!-- Instagram -->
       <a
+        [ngClass]="{
+          'bg-dark text-white btn-outline-light': !settingsService.colorWhite,
+          'bg-light text-dark btn-outline-dark': settingsService.colorWhite
+        }"
         mdbRipple
         class="btn btn-outline-light btn-floating m-1"
         href="#!"
@@ -41,6 +64,10 @@
 
       <!-- Linkedin -->
       <a
+        [ngClass]="{
+          'bg-dark text-white btn-outline-light': !settingsService.colorWhite,
+          'bg-light text-dark btn-outline-dark': settingsService.colorWhite
+        }"
         mdbRipple
         class="btn btn-outline-light btn-floating m-1"
         href="#!"
@@ -50,6 +77,10 @@
 
       <!-- Github -->
       <a
+        [ngClass]="{
+          'bg-dark text-white btn-outline-light': !settingsService.colorWhite,
+          'bg-light text-dark btn-outline-dark': settingsService.colorWhite
+        }"
         mdbRipple
         class="btn btn-outline-light btn-floating m-1"
         href="#!"
