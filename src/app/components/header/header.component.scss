@@ -19,8 +19,6 @@ $goldTitle: #fdb813;
 .navbar-nav {
   .nav-link {
     // margin-right: 80px; /* zwiększa odstęp między pozycjami */
-
-    color: white;
     &.active {
       color: $lightsaber-color;
     }
@@ -29,10 +27,6 @@ $goldTitle: #fdb813;
       color: $lightsaber-color;
     }
   }
-}
-
-.menuVisible {
-  color: red;
 }
 
 .visibleMenu {

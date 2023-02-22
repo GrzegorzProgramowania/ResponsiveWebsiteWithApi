@@ -1,6 +1,12 @@
 <audio preload id="myAudio" src="/assets/sounds/StarWars.mp3"></audio>
 <audio #audio src="/assets/sounds/lightsabre.mp3"></audio>
-<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+<nav
+  [ngClass]="{
+    'bg-dark text-white btn-outline-light': !settingsService.colorWhite,
+    'bg-light text-dark btn-outline-dark': settingsService.colorWhite
+  }"
+  class="navbar navbar-expand-lg navbar-light bg-dark"
+>
   <div (click)="settingsService.soundOn = !settingsService.soundOn">
     soundOn:
     {{ settingsService.soundOn }}
@@ -10,7 +16,13 @@
     {{ settingsService.colorWhite }}
   </div>
 
-  <div class="container-fluid bg-dark">
+  <div
+    [ngClass]="{
+      'bg-dark text-white': !settingsService.colorWhite,
+      'bg-light text-dark': settingsService.colorWhite
+    }"
+    class="container-fluid bg-dark"
+  >
     <a class="navbar-brand" href="#">
       <div class="yoda">
         <img src="assets/img/babyJodaWhite.png" alt="BabyYoda" /></div
@@ -70,7 +82,13 @@
           (click)="playSound()"
           class="nav-item"
         >
+          <!-- CZEMU ZMIENIA PROSTOKATY DOOKOŁA <A> z takim opoźnieniem ?</A>
+          ZMIENIĆ ABY HOOVER I ACTIVE BYŁY W KOLORZE LIGHTSABER (NADPISUJE STYLE) -->
           <a
+            [ngClass]="{
+              'bg-dark text-white': !settingsService.colorWhite,
+              'bg-light text-dark': settingsService.colorWhite
+            }"
             class="nav-link"
             [routerLink]="item.path"
             routerLinkActive="active"
@@ -82,13 +100,24 @@
       </ul>
       <form class="d-flex">
         <input
+          [ngClass]="{
+            'bg-dark text-light btn-outline-light': !settingsService.colorWhite,
+            'bg-light text-dark btn-outline-dark': settingsService.colorWhite
+          }"
           class="form-control me-2"
           id="top"
           type="search"
           placeholder="Search"
           aria-label="Search"
         />
-        <button class="btn btn-outline-secondary" type="submit">Search</button>
+        <button
+          text-dark
+          btn-outline-dark
+          class="btn btn-outline-secondary"
+          type="submit"
+        >
+          Search
+        </button>
       </form>
     </div>
   </div>
