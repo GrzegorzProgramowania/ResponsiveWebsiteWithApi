@@ -1,6 +1,7 @@
 import { Component, Input } from "@angular/core";
-// import { Starship } from '../../interfaces/starships';
 import { Starship } from "src/app/interfaces/starships";
+import { SettingsService } from "src/app/services/settings.service";
+
 @Component({
   selector: "app-starships-list-item",
   templateUrl: "./starships-list-item.component.html",
@@ -8,8 +9,5 @@ import { Starship } from "src/app/interfaces/starships";
 })
 export class StarshipsListItemComponent {
   @Input() starship!: Starship;
-
-  // changeColor() {
-  //   this.starship.active = !this.starship.active;
-  // }
+  constructor(public settingsService: SettingsService) {}
 }

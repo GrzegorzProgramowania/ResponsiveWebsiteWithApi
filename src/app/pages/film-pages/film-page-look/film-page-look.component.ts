@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Film } from 'src/app/interfaces/film';
 import { FilmService } from 'src/app/services/film.service';
+import { SettingsService } from 'src/app/services/settings.service';
 
 @Component({
   selector: 'app-film-page-look',
@@ -13,7 +14,11 @@ export class FilmPageLookComponent {
   id: number = null;
   film: Film;
 
-  constructor(private route: ActivatedRoute, private filmService: FilmService) {
+  constructor(
+    private route: ActivatedRoute,
+    private filmService: FilmService,
+    public settingsService: SettingsService
+  ) {
     this.showSpinner = true;
     console.log(this.route.snapshot.params['id']);
     this.id = this.route.snapshot.params['id'];

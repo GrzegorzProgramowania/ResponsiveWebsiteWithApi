@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Human } from 'src/app/interfaces/people';
 import { HumanService } from 'src/app/services/people.service';
+import { SettingsService } from 'src/app/services/settings.service';
 
 @Component({
   selector: 'app-person-page-look',
@@ -15,7 +16,8 @@ export class PersonPageLookComponent {
 
   constructor(
     private route: ActivatedRoute,
-    private peopleService: HumanService
+    private peopleService: HumanService,
+    public settingsService: SettingsService
   ) {
     this.showSpinner = true;
     console.log(this.route.snapshot.params['id']);

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Vehicle } from 'src/app/interfaces/vehicles';
 import { VehicleService } from 'src/app/services/vehicles.service';
+import { SettingsService } from 'src/app/services/settings.service';
 
 @Component({
   selector: 'app-vehicle-page-look',
@@ -15,7 +16,8 @@ export class VehiclePageLookComponent {
 
   constructor(
     private route: ActivatedRoute,
-    private vehicleService: VehicleService
+    private vehicleService: VehicleService,
+    public settingsService: SettingsService
   ) {
     this.showSpinner = true;
     console.log(this.route.snapshot.params['id']);

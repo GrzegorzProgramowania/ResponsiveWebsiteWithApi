@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Starship } from 'src/app/interfaces/starships';
 import { StarshipService } from 'src/app/services/starships.service';
+import { SettingsService } from 'src/app/services/settings.service';
 
 @Component({
   selector: 'app-starship-page-look',
@@ -15,7 +16,8 @@ export class StarshipPageLookComponent {
 
   constructor(
     private route: ActivatedRoute,
-    private starshipService: StarshipService
+    private starshipService: StarshipService,
+    public settingsService: SettingsService
   ) {
     this.showSpinner = true;
     console.log(this.route.snapshot.params['id']);

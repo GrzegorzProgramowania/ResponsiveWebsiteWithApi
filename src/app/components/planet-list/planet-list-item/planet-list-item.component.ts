@@ -1,6 +1,6 @@
 import { Component, Input } from "@angular/core";
-// import { Planet } from '../../interfaces/planet';
 import { Planet } from "../../../interfaces/planet";
+import { SettingsService } from "src/app/services/settings.service";
 
 @Component({
   selector: "app-planet-list-item",
@@ -9,4 +9,5 @@ import { Planet } from "../../../interfaces/planet";
 })
 export class PlanetListItemComponent {
   @Input() planet!: Planet;
+  constructor(public settingsService: SettingsService) {}
 }

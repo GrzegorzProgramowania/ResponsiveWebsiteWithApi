@@ -1,6 +1,12 @@
 <app-loader-component *ngIf="showSpinner"></app-loader-component>
 <div *ngIf="vehicle">
-  <div class="person-card">
+  <div
+    [ngClass]="{
+      'bg-dark text-white': !settingsService.colorWhite,
+      'bg-light text-dark': settingsService.colorWhite
+    }"
+    class="person-card"
+  >
     <div class="person-title">Star Wars Vehicle</div>
     <div class="person-item">Id : {{ vehicle.id }}</div>
     <div class="person-item">Name : {{ vehicle.name }}</div>

@@ -1,6 +1,6 @@
 import { Component, Input } from "@angular/core";
-// import { Human } from '../../interfaces/people';
 import { Human } from "../../../interfaces/people";
+import { SettingsService } from "src/app/services/settings.service";
 
 @Component({
   selector: "app-people-list-item",
@@ -9,4 +9,5 @@ import { Human } from "../../../interfaces/people";
 })
 export class PeopleListItemComponent {
   @Input() human!: Human;
+  constructor(public settingsService: SettingsService) {}
 }

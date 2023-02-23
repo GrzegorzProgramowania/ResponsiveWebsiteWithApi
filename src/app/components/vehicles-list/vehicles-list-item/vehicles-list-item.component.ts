@@ -1,6 +1,6 @@
 import { Component, Input } from "@angular/core";
-// import { Vehicle } from '../../interfaces/vehicles';
 import { Vehicle } from "../../../interfaces/vehicles";
+import { SettingsService } from "src/app/services/settings.service";
 @Component({
   selector: "app-vehicles-list-item",
   templateUrl: "./vehicles-list-item.component.html",
@@ -8,4 +8,5 @@ import { Vehicle } from "../../../interfaces/vehicles";
 })
 export class VehiclesListItemComponent {
   @Input() vehicle!: Vehicle;
+  constructor(public settingsService: SettingsService) {}
 }

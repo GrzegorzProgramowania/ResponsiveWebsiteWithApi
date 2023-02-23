@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Planet } from 'src/app/interfaces/planet';
 import { PlanetService } from 'src/app/services/planet.service';
+import { SettingsService } from 'src/app/services/settings.service';
 
 @Component({
   selector: 'app-planet-page-look',
@@ -15,7 +16,8 @@ export class PlanetPageLookComponent {
 
   constructor(
     private route: ActivatedRoute,
-    private planetService: PlanetService
+    private planetService: PlanetService,
+    public settingsService: SettingsService
   ) {
     this.showSpinner = true;
     console.log(this.route.snapshot.params['id']);

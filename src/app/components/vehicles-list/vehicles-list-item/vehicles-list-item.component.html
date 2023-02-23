@@ -1,5 +1,17 @@
-<div class="card bg-dark">
-  <div class="card-body">
+<div
+  [ngClass]="{
+    'bg-dark text-white': !settingsService.colorWhite,
+    'bg-light text-dark': settingsService.colorWhite
+  }"
+  class="card bg-dark"
+>
+  <div
+    [ngClass]="{
+      'bg-dark text-white': !settingsService.colorWhite,
+      'bg-light text-dark': settingsService.colorWhite
+    }"
+    class="card-body"
+  >
     {{ vehicle.name }}
   </div>
 </div>

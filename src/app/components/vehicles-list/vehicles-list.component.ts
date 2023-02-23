@@ -1,5 +1,4 @@
 import { Component, Input } from "@angular/core";
-// import { Vehicle } from '../interfaces/vehicles';
 import { Vehicle } from "../../interfaces/vehicles";
 
 @Component({
