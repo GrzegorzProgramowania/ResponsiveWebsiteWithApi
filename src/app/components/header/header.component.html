@@ -48,6 +48,10 @@
         class="nav-item p-2 bd-highlight"
       >
         <a
+          [ngClass]="{
+            'bg-dark text-white btn-outline-light': !settingsService.colorWhite,
+            'bg-light text-dark btn-outline-dark': settingsService.colorWhite
+          }"
           class="nav-link"
           [routerLink]="item.path"
           routerLinkActive="active"

@@ -1,4 +1,10 @@
-<div class="bg-dark">
+<div
+  [ngClass]="{
+    'bg-dark text-white': !settingsService.colorWhite,
+    'bg-light text-dark': settingsService.colorWhite
+  }"
+  class="bg-dark"
+>
   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores unde illum
   inventore facilis mollitia odit ratione sequi adipisci placeat, odio
   laboriosam, sunt consequatur dignissimos suscipit nam blanditiis ut sit

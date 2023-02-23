@@ -1,5 +1,7 @@
 import { Component, Input } from "@angular/core";
 import { Type } from "../../../interfaces/species";
+import { SettingsService } from "src/app/services/settings.service";
+
 @Component({
   selector: "app-species-list-item",
   templateUrl: "./species-list-item.component.html",
@@ -7,4 +9,5 @@ import { Type } from "../../../interfaces/species";
 })
 export class SpeciesListItemComponent {
   @Input() species!: Type;
+  constructor(public settingsService: SettingsService) {}
 }
