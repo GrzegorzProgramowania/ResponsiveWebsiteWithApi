@@ -38,26 +38,58 @@ export class HeaderComponent {
   constructor(public settingsService: SettingsService) {}
 
   ngOnInit() {
-    this.onLoad();
+    if (this.settingsService.soundOn) {
+      this.playSound();
+    }
   }
 
   onLoad() {
-    // var audio = new Audio('/assets/sounds/StarWars.mp3');
-    // audio.play();
+    var audio = new Audio("/assets/sounds/StarWars.mp3");
+    audio.play();
 
     setTimeout(function () {
-      // audio.pause();
+      audio.pause();
     }, 8500);
   }
+  // ngOnInit() {
+  //   // this.onLoad();
+  // }
 
+  // onLoad() {
+  //   var audio = new Audio("/assets/sounds/StarWars.mp3");
+  //   audio.play();
+
+  //   setTimeout(function () {
+  //     audio.pause();
+  //   }, 8500);
+  // }
   @ViewChild("audio", { static: true })
   audio!: ElementRef<HTMLAudioElement>;
 
   playSound() {
-    return;
     this.audio.nativeElement.play();
     setTimeout(() => {
       this.audio.nativeElement.pause();
-    }, this.audio.nativeElement.duration * 1000);
+    }, this.audio.nativeElement.duration * 500);
+  }
+
+  toggleSound() {
+    this.settingsService.soundOn = !this.settingsService.soundOn;
+    if (this.settingsService.soundOn) {
+      this.playSound();
+    } else {
+      this.audio.nativeElement.pause();
+    }
   }
 }
+//   @ViewChild("audio", { static: true })
+//   audio!: ElementRef<HTMLAudioElement>;
+
+//   playSound() {
+//     return;
+//     this.audio.nativeElement.play();
+//     setTimeout(() => {
+//       this.audio.nativeElement.pause();
+//     }, this.audio.nativeElement.duration * 500);
+//   }
+// }
