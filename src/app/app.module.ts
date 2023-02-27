@@ -40,6 +40,7 @@ import { PlanetPageLookComponent } from './pages/planet-pages/planet-page-look/p
 import { SpeciesPageLookComponent } from './pages/species-pages/species-page-look/species-page-look.component';
 import { StarshipPageLookComponent } from './pages/starships-pages/starship-page-look/starship-page-look.component';
 import { VehiclePageLookComponent } from './pages/vehicles-pages/vehicle-page-look/vehicle-page-look.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -73,6 +74,7 @@ import { VehiclePageLookComponent } from './pages/vehicles-pages/vehicle-page-lo
     SpeciesPageLookComponent,
     StarshipPageLookComponent,
     VehiclePageLookComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,

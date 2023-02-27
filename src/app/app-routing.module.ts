@@ -13,6 +13,7 @@ import { PlanetPageLookComponent } from './pages/planet-pages/planet-page-look/p
 import { SpeciesPageLookComponent } from './pages/species-pages/species-page-look/species-page-look.component';
 import { VehiclePageLookComponent } from './pages/vehicles-pages/vehicle-page-look/vehicle-page-look.component';
 import { StarshipPageLookComponent } from './pages/starships-pages/starship-page-look/starship-page-look.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -33,6 +34,8 @@ const routes: Routes = [
   { path: 'starships/:id', component: StarshipPageLookComponent },
   { path: 'vehicles', component: VehiclesPageComponent },
   { path: 'vehicles/:id', component: VehiclePageLookComponent },
+  { path: '404', component: NotFoundComponent },
+  { path: '**', redirectTo: '/404' },
 ];
 
 @NgModule({

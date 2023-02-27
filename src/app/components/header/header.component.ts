@@ -51,6 +51,8 @@ export class HeaderComponent {
       audio.pause();
     }, 8500);
   }
+
+  //STARE
   // ngOnInit() {
   //   // this.onLoad();
   // }
@@ -63,10 +65,13 @@ export class HeaderComponent {
   //     audio.pause();
   //   }, 8500);
   // }
+  //STARE
+
   @ViewChild("audio", { static: true })
   audio!: ElementRef<HTMLAudioElement>;
 
   playSound() {
+    return;
     this.audio.nativeElement.play();
     setTimeout(() => {
       this.audio.nativeElement.pause();
