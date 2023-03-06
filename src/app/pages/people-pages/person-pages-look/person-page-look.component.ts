@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Human } from 'src/app/interfaces/people';
+import { Human, HumanDetails } from 'src/app/interfaces/people';
 import { HumanService } from 'src/app/services/people.service';
 import { SettingsService } from 'src/app/services/settings.service';
 
@@ -12,7 +12,7 @@ import { SettingsService } from 'src/app/services/settings.service';
 export class PersonPageLookComponent {
   showSpinner = false;
   id: number = null;
-  person: Human;
+  person: HumanDetails;
 
   constructor(
     private route: ActivatedRoute,
@@ -23,8 +23,8 @@ export class PersonPageLookComponent {
     console.log(this.route.snapshot.params['id']);
     this.id = this.route.snapshot.params['id'];
     this.peopleService.getHuman(this.id).subscribe((person) => {
-      this.person = person;
-      console.log('person', person);
+      this.person = person.result;
+      console.log('person', this.person);
       this.showSpinner = false;
     });
   }

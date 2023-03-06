@@ -23,7 +23,7 @@ export class FilmPageLookComponent {
     console.log(this.route.snapshot.params['id']);
     this.id = this.route.snapshot.params['id'];
     this.filmService.getFilm(this.id).subscribe((film) => {
-      this.film = film;
+      this.film = film.result;
       console.log('film', film);
       this.showSpinner = false;
     });

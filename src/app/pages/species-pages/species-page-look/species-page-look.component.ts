@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Type } from 'src/app/interfaces/species';
+import { Type, TypeDetails } from 'src/app/interfaces/species';
 import { SpeciesService } from 'src/app/services/species.service';
 import { SettingsService } from 'src/app/services/settings.service';
 
@@ -12,7 +12,7 @@ import { SettingsService } from 'src/app/services/settings.service';
 export class SpeciesPageLookComponent {
   showSpinner = false;
   id: number = null;
-  species: Type;
+  species: TypeDetails;
 
   constructor(
     private route: ActivatedRoute,
@@ -23,7 +23,7 @@ export class SpeciesPageLookComponent {
     console.log(this.route.snapshot.params['id']);
     this.id = this.route.snapshot.params['id'];
     this.speciesService.getType(this.id).subscribe((species) => {
-      this.species = species;
+      this.species = species.result;
       console.log('species', species);
       this.showSpinner = false;
     });

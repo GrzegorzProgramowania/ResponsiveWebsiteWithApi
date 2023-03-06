@@ -1,5 +1,5 @@
 <app-film-list-item
   *ngFor="let film of films"
   [film]="film"
-  routerLink="/films/{{ getId(film.properties.url) }}"
+  routerLink="/films/{{ film.uid }}"
 ></app-film-list-item>

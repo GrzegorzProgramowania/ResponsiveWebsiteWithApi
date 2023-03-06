@@ -1,7 +1,7 @@
 import { Data } from '@angular/router';
 
 export interface Film {
-  id: string;
+  uid: string;
   properties: {
     title: string;
     characters: [];

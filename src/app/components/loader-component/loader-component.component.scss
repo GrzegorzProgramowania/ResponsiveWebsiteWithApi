@@ -12,12 +12,14 @@ app-root {
 }
 
 .loading-icon {
-  position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
   .icon {
     border: 4px solid #f3f3f3;
@@ -25,13 +27,6 @@ app-root {
     border-radius: 50%;
     width: 50px;
     height: 50px;
-
-    // position: absolute; /* ustaw pozycjonowanie absolutne */
-    position: fixed;
-    top: 50%; /* ustaw górną krawędź elementu na środku strony */
-    left: 50%; /* ustaw lewą krawędź elementu na środku strony */
-    transform: translate(-50%, -50%);
-    /* przesuń element w lewo i w górę o połowę jego własnej szerokości i wysokości */
 
     //bez animacji jest chyba ok - na środku strony, dodanie animacji przesuwa w prawo i dół???
     animation: spin 1s linear infinite;

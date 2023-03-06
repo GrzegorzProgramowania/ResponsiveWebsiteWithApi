@@ -1,5 +1,5 @@
 <app-people-list-item
   *ngFor="let human of humans"
   [human]="human"
-  routerLink="/people/{{ getId(human.properties.url) }}"
+  routerLink="/people/{{ human.uid }}"
 ></app-people-list-item>

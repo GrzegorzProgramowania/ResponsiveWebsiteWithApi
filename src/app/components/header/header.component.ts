@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from "@angular/core";
+import { Component, ElementRef, ViewChild, ViewEncapsulation } from "@angular/core";
 import { SettingsService } from "src/app/services/settings.service";
 
 interface MenuItem {
@@ -10,6 +10,7 @@ interface MenuItem {
   selector: "app-header",
   templateUrl: "./header.component.html",
   styleUrls: ["./header.component.scss"],
+  encapsulation: ViewEncapsulation.None,
 })
 export class HeaderComponent {
   menuVisible: boolean = false;

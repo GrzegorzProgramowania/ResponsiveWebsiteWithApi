@@ -9,6 +9,12 @@
 //variables:
 $lightsaber-color: #00bfff;
 
+.bg-light {
+  .yoda {
+    filter: invert(100%)
+  }
+}
+
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.55);
   border-color: white;
@@ -16,12 +22,14 @@ $lightsaber-color: #00bfff;
 
 .navbar-nav {
   a {
-    &.active {
-      color: $lightsaber-color;
+    transition: none;
+
+    &.selected {
+      color: $lightsaber-color !important;
     }
     &:hover,
     &:focus {
-      color: $lightsaber-color;
+      color: $lightsaber-color !important;
     }
   }
 }
@@ -49,6 +57,18 @@ $lightsaber-color: #00bfff;
   height: 100%;
   opacity: 90%;
   color: white;
+}
+
+.bg-white {
+  #myButton {
+    filter: invert(1);
+  }
+
+  .visibleMenu {
+    .nav-item a {
+      color: black;
+    }
+  }
 }
 
 @media (min-width: 992px) {
