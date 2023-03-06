@@ -1,10 +1,10 @@
 <audio preload id="myAudio" src="/assets/sounds/StarWars.mp3"></audio>
-<audio #audio src="/assets/sounds/lightsabre.mp3"></audio>
+<!-- <audio #audio src="/assets/sounds/lightsabre.mp3"></audio> -->
 <nav class="navbar navbar-expand-lg navbar-light">
-  <div (click)="settingsService.soundOn = !settingsService.soundOn">
+  <!-- <div (click)="settingsService.soundOn = !settingsService.soundOn">
     soundOn:
     {{ settingsService.soundOn }}
-  </div>
+  </div> -->
   <div (click)="settingsService.toggleColor()">
     colorWhite:
     {{ settingsService.colorWhite }}
@@ -13,9 +13,9 @@
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <div class="yoda">
-        <img src="../../../assets/img/typNumer1.png" alt="BabyYoda" /></div>
-        <!-- <img src="{{settingsService.colorWhite ? '../../../assets/img/typNumer2.png' : '../../../assets/img/typNumer1.png'}}" alt="BabyYoda" /></div> -->
-      </a>
+        <img src="../../../assets/img/typNumer1.png" alt="BabyYoda" />
+      </div>
+    </a>
 
     <button
       id="myButton"
@@ -37,7 +37,8 @@
         (click)="playSound(); menuVisible = false"
         class="nav-item p-2 bd-highlight"
       >
-        <a class="nav-link"
+        <a
+          class="nav-link"
           [routerLink]="item.path"
           routerLinkActive="selected"
           aria-current="page"

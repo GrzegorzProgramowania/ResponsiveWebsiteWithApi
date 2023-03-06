@@ -1,4 +1,9 @@
-import { Component, ElementRef, ViewChild, ViewEncapsulation } from "@angular/core";
+import {
+  Component,
+  ElementRef,
+  ViewChild,
+  ViewEncapsulation,
+} from "@angular/core";
 import { SettingsService } from "src/app/services/settings.service";
 
 interface MenuItem {
@@ -41,9 +46,6 @@ export class HeaderComponent {
   constructor(public settingsService: SettingsService) {}
 
   ngOnInit() {
-    if (this.settingsService.soundOn) {
-      this.playSound();
-    }
     this.imgSrc = this.settingsService.colorWhite
       ? "../../../assets/img/typNumer2.png"
       : "../../../assets/img/typNumer1.png";
@@ -69,7 +71,6 @@ export class HeaderComponent {
   audio!: ElementRef<HTMLAudioElement>;
 
   playSound() {
-    return;
     this.audio.nativeElement.play();
     setTimeout(() => {
       this.audio.nativeElement.pause();

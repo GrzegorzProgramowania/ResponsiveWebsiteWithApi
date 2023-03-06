@@ -1,4 +1,9 @@
-import { Injectable, EventEmitter, Renderer2, RendererFactory2 } from '@angular/core';
+import {
+  Injectable,
+  EventEmitter,
+  Renderer2,
+  RendererFactory2,
+} from '@angular/core';
 
 @Injectable({
   providedIn: 'root',
@@ -6,7 +11,7 @@ import { Injectable, EventEmitter, Renderer2, RendererFactory2 } from '@angular/
 export class SettingsService {
   private renderer: Renderer2;
 
-  soundOn = false;
+  soundOn = true;
   colorWhite = false;
   colorChanged = new EventEmitter<boolean>();
 

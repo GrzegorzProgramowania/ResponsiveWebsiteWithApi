@@ -12,17 +12,17 @@ export class FilmListComponent {
   ngOnInit() {
     console.log(this.films);
   }
-  getId(url: string): string {
-    if (!url) {
-      return "";
-    }
-    const regex = /^https:\/\/www\.swapi\.tech\/api\/films\/(.+)$/;
-    const match = url.match(regex);
-    if (match && match[1]) {
-      return match[1];
-    }
-    return "";
-  }
+  // getId(url: string): string {
+  //   if (!url) {
+  //     return "";
+  //   }
+  //   const regex = /^https:\/\/www\.swapi\.tech\/api\/films\/(.+)$/;
+  //   const match = url.match(regex);
+  //   if (match && match[1]) {
+  //     return match[1];
+  //   }
+  //   return "";
+  // }
 
   // OLD REGEX
   // getId(url: string): string {
