@@ -70,19 +70,20 @@ export class HeaderComponent {
   @ViewChild("audio", { static: true })
   audio!: ElementRef<HTMLAudioElement>;
 
-  playSound() {
-    this.audio.nativeElement.play();
-    setTimeout(() => {
-      this.audio.nativeElement.pause();
-    }, this.audio.nativeElement.duration * 500);
-  }
+  //DO SKASOWANIA - nie będzie przełączania dźwięków , zostaje tylko główny dźwięk kiedy otwieram stronkę
+  // playSound() {
+  //   this.audio.nativeElement.play();
+  //   setTimeout(() => {
+  //     this.audio.nativeElement.pause();
+  //   }, this.audio.nativeElement.duration * 500);
+  // }
 
-  toggleSound() {
-    this.settingsService.soundOn = !this.settingsService.soundOn;
-    if (this.settingsService.soundOn) {
-      this.playSound();
-    } else {
-      this.audio.nativeElement.pause();
-    }
-  }
+  // toggleSound() {
+  //   this.settingsService.soundOn = !this.settingsService.soundOn;
+  //   if (this.settingsService.soundOn) {
+  //     this.playSound();
+  //   } else {
+  //     this.audio.nativeElement.pause();
+  //   }
+  // }
 }

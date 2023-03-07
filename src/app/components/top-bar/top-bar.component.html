@@ -1,16 +1,31 @@
 <div *ngIf="settingsService">
-  <div
-    [ngClass]="{
-      'bg-dark text-white': !settingsService.colorWhite,
-      'bg-light text-dark': settingsService.colorWhite
-    }"
-  >
+  <!-- <div
+  [ngClass]="{
+    'bg-dark text-white': !settingsService.colorWhite,
+    'bg-light text-dark': settingsService.colorWhite
+  }"
+> -->
+
+  <!-- <div>
+  <a class="fw-bold star-wars-h2" href="#">
+    <h2
+      [ngClass]="
+        settingsService.colorWhite
+          ? 'text-black border-black'
+          : 'text-white border-white'
+      "
+    >
+      WORLD OF STAR WARS
+    </h2>
+  </a>
+</div> -->
+  <div>
     <a class="fw-bold star-wars-h2" href="#">
       <h2
         [ngClass]="
           settingsService.colorWhite
-            ? 'text-black border-black'
-            : 'text-white border-white'
+            ? 'text-black border-black '
+            : 'text-white border-white '
         "
       >
         WORLD OF STAR WARS
@@ -19,5 +34,16 @@
     <!-- <button class="btn btn-primary" (click)="settingsService.toggleColor()">
       Zmień kolor
     </button> -->
+  </div>
+  <!-- <div class="topRight" (click)="settingsService.toggleColor()">
+    colorWhite:
+    {{ settingsService.colorWhite }}
+  </div> -->
+  <div class="topRight" (click)="settingsService.toggleColor()">
+    <i
+      [ngClass]="
+        settingsService.colorWhite ? 'mdi-palette' : 'mdi-palette-outline'
+      "
+    ></i>
   </div>
 </div>

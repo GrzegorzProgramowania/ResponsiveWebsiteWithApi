@@ -5,10 +5,12 @@
     soundOn:
     {{ settingsService.soundOn }}
   </div> -->
+
+  <!-- zmiana kolorów
   <div (click)="settingsService.toggleColor()">
     colorWhite:
     {{ settingsService.colorWhite }}
-  </div>
+  </div> -->
 
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
@@ -34,7 +36,8 @@
     <div class="visibleMenu" *ngIf="menuVisible">
       <li
         *ngFor="let item of menuItems"
-        (click)="playSound(); menuVisible = false"
+        ;
+        menuVisible="false"
         class="nav-item p-2 bd-highlight"
       >
         <a
@@ -46,7 +49,8 @@
           {{ item.text }}
         </a>
       </li>
-      <div class="formContainer">
+      <!-- do skasowania -->
+      <!-- <div class="formContainer">
         <form class="d-flex" id="Top">
           <input
             class="form-control me-2"
@@ -58,7 +62,7 @@
             Search
           </button>
         </form>
-      </div>
+      </div> -->
     </div>
 
     <!-- GÓRNE (GŁÓWNE) MENU -->
@@ -67,11 +71,7 @@
       id="navbarSupportedContent"
     >
       <ul class="navbar-nav">
-        <li
-          *ngFor="let item of menuItems"
-          (click)="playSound()"
-          class="nav-item"
-        >
+        <li *ngFor="let item of menuItems" class="nav-item">
           <!-- CZEMU ZMIENIA PROSTOKATY DOOKOŁA <A> z takim opoźnieniem ?</A>
           ZMIENIĆ ABY HOOVER I ACTIVE BYŁY W KOLORZE LIGHTSABER (NADPISUJE STYLE) -->
           <a
