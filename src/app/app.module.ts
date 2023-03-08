@@ -42,6 +42,9 @@ import { StarshipPageLookComponent } from './pages/starships-pages/starship-page
 import { VehiclePageLookComponent } from './pages/vehicles-pages/vehicle-page-look/vehicle-page-look.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 
+// import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+// import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+
 @NgModule({
   declarations: [
     AppComponent,

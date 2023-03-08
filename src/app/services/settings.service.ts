@@ -11,7 +11,7 @@ import {
 export class SettingsService {
   private renderer: Renderer2;
 
-  soundOn = true;
+  // soundOn = true;
   colorWhite = false;
   colorChanged = new EventEmitter<boolean>();
 

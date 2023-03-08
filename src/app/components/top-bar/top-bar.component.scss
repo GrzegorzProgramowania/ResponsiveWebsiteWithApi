@@ -1,7 +1,29 @@
 :host {
   display: block;
 }
+.topRight {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2em;
+  padding: 1em;
+}
 
+.mdi-palette:before {
+  content: "\f53f";
+}
+
+.mdi-palette-outline:before {
+  content: "\f4e4";
+}
+.topRight {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background-color: transparent;
+  z-index: 9999;
+}
 //variables
 $bgDark: #111213;
 $lightsaber-color: #00bfff;
@@ -17,4 +39,13 @@ a {
   color: #fff;
   justify-content: center;
   text-align: center;
+}
+
+.bg-white {
+  .star-wars-h2 {
+    text-shadow: -2px 2px #fff, 2px 2px #fff, -2px -2px #fff, 2px -2px #fff;
+    // background: black;
+    justify-content: center;
+    text-align: center;
+  }
 }
