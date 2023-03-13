@@ -2,16 +2,11 @@
   display: block;
 }
 
-// .yoda {
-//   position: absolute;
-//   right: 0;
-// }
-//variables:
 $lightsaber-color: #00bfff;
 
 .bg-light {
   .yoda {
-    filter: invert(100%)
+    filter: invert(100%);
   }
 }
 
@@ -33,21 +28,6 @@ $lightsaber-color: #00bfff;
     }
   }
 }
-
-// .navbar-nav {
-//   .nav-link {
-//     a {
-//       // margin-right: 80px; /* zwiększa odstęp między pozycjami */
-//       &.active {
-//         color: $lightsaber-color;
-//       }
-//       &:hover,
-//       &:focus {
-//         color: $lightsaber-color;
-//       }
-//     }
-//   }
-// }
 
 .visibleMenu {
   list-style: none;

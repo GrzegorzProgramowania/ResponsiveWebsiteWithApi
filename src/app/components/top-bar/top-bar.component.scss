@@ -1,39 +1,45 @@
 :host {
   display: block;
 }
-.topRight {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 2em;
-  padding: 1em;
+// .topRight {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   font-size: 2em;
+//   padding: 1em;
+// }
+
+.bg-light {
+  .sunrise {
+    filter: invert(100%);
+  }
 }
 
-.mdi-palette:before {
-  content: "\f53f";
-}
-
-.mdi-palette-outline:before {
-  content: "\f4e4";
-}
 .topRight {
   position: fixed;
   top: 0;
   right: 0;
-  padding: 10px;
+  // padding: 10px;
+  padding-right: 10px;
   background-color: transparent;
   z-index: 9999;
 }
+
+#sun {
+  width: 10px;
+  height: 10px;
+}
+
 //variables
 $bgDark: #111213;
 $lightsaber-color: #00bfff;
 $whiteTitle: white;
 // $goldTitle: #fdb813;
 
-a {
-  text-decoration: none;
-  // color: inherit;
-}
+// a {
+//   text-decoration: none;
+//   // color: inherit;
+// }
 .star-wars-h2 {
   text-shadow: -2px 2px #000, 2px 2px #000, -2px -2px #000, 2px -2px #000;
   color: #fff;

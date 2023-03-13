@@ -41,15 +41,15 @@ export class HeaderComponent {
     { path: "vehicles", text: "Vehicles" },
   ];
 
-  imgSrc: string;
+  // imgSrc: string;
 
   constructor(public settingsService: SettingsService) {}
 
-  ngOnInit() {
-    this.imgSrc = this.settingsService.colorWhite
-      ? "../../../assets/img/typNumer2.png"
-      : "../../../assets/img/typNumer1.png";
-  }
+  // ngOnInit() {
+  //   this.imgSrc = this.settingsService.colorWhite
+  //     ? "../../../assets/img/typNumer2.png"
+  //     : "../../../assets/img/typNumer1.png";
+  // }
 
   onLoad() {
     var audio = new Audio("/assets/sounds/StarWars.mp3");
@@ -60,12 +60,12 @@ export class HeaderComponent {
     }, 8500);
   }
 
-  toggleColor() {
-    this.settingsService.toggleColor();
-    this.imgSrc = this.settingsService.colorWhite
-      ? "../../../assets/img/typNumer2.png"
-      : "../../../assets/img/typNumer1.png";
-  }
+  // toggleColor() {
+  //   this.settingsService.toggleColor();
+  //   this.imgSrc = this.settingsService.colorWhite
+  //     ? "../../../assets/img/typNumer2.png"
+  //     : "../../../assets/img/typNumer1.png";
+  // }
 
   @ViewChild("audio", { static: true })
   audio!: ElementRef<HTMLAudioElement>;
