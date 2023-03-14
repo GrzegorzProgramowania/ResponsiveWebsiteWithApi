@@ -9,27 +9,37 @@
   >
     <div class="person-title">Star Wars Starship</div>
     <div class="person-item">Active: {{ starship.active }}</div>
-    <div class="person-item">Id: {{ starship.id }}</div>
-    <div class="person-item">Name: {{ starship.name }}</div>
-    <div class="person-item">MGLT: {{ starship.MGLT }}</div>
-    <div class="person-item">Cargo_capacity: {{ starship.cargo_capacity }}</div>
-    <div class="person-item">Consumables: {{ starship.consumables }}</div>
+    <div class="person-item">Id: {{ starship.uid }}</div>
+    <div class="person-item">Name: {{ starship.properties.name }}</div>
+    <div class="person-item">MGLT: {{ starship.properties.MGLT }}</div>
     <div class="person-item">
-      Cost_in_credits: {{ starship.cost_in_credits }}
+      Cargo_capacity: {{ starship.properties.cargo_capacity }}
     </div>
-    <div class="person-item">Created: {{ starship.created }}</div>
-    <div class="person-item">Crew: {{ starship.crew }}</div>
-    <div class="person-item">Edited: {{ starship.edited }}</div>
-    <div class="person-item">Length: {{ starship.length }}</div>
-    <div class="person-item">Manufacturer: {{ starship.manufacturer }}</div>
     <div class="person-item">
-      Max_atmosphering_speed: {{ starship.max_atmosphering_speed }}
+      Consumables: {{ starship.properties.consumables }}
     </div>
-    <div class="person-item">Model: {{ starship.model }}</div>
-    <div class="person-item">Passengers: {{ starship.passengers }}</div>
-    <div class="person-item">Films: {{ starship.films }}</div>
-    <div class="person-item">Pilots: {{ starship.pilots }}</div>
-    <div class="person-item">Starship_class: {{ starship.starship_class }}</div>
-    <div class="person-item">Url: {{ starship.url }}</div>
+    <div class="person-item">
+      Cost_in_credits: {{ starship.properties.cost_in_credits }}
+    </div>
+    <div class="person-item">Created: {{ starship.properties.created }}</div>
+    <div class="person-item">Crew: {{ starship.properties.crew }}</div>
+    <div class="person-item">Edited: {{ starship.properties.edited }}</div>
+    <div class="person-item">Length: {{ starship.properties.length }}</div>
+    <div class="person-item">
+      Manufacturer: {{ starship.properties.manufacturer }}
+    </div>
+    <div class="person-item">
+      Max_atmosphering_speed: {{ starship.properties.max_atmosphering_speed }}
+    </div>
+    <div class="person-item">Model: {{ starship.properties.model }}</div>
+    <div class="person-item">
+      Passengers: {{ starship.properties.passengers }}
+    </div>
+    <div class="person-item">Films: {{ starship.properties.films }}</div>
+    <div class="person-item">Pilots: {{ starship.properties.pilots }}</div>
+    <div class="person-item">
+      Starship_class: {{ starship.properties.starship_class }}
+    </div>
+    <div class="person-item">Url: {{ starship.properties.url }}</div>
   </div>
 </div>

@@ -30,6 +30,12 @@
   height: 10px;
 }
 
+.bg-light #sun {
+  width: 10px;
+  height: 10px;
+  filter: invert(100%);
+}
+
 //variables
 $bgDark: #111213;
 $lightsaber-color: #00bfff;

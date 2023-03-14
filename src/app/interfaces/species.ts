@@ -8,6 +8,7 @@ export interface TypeDetails {
   uid: string;
   description: string;
   properties: {
+    name: string;
     average_height: string;
     average_lifespan: string;
     classification: string;
@@ -22,7 +23,7 @@ export interface TypeDetails {
     films: [];
     skin_colors: string;
     url: string;
-  }
+  };
 }
 
 //Old Api interface

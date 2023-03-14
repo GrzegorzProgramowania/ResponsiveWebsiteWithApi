@@ -1,12 +1,18 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Vehicle } from '../interfaces/vehicles';
+import { Vehicle, VehicleDetails } from '../interfaces/vehicles';
 
-export interface ApiResponse {
+export interface VehiclesResponse {
   count: number;
   next: string;
   previous: string;
   results: Vehicle[];
+  properties: string;
+}
+
+export interface VehicleResponse {
+  message: string;
+  result: VehicleDetails;
 }
 
 @Injectable({
@@ -16,10 +22,12 @@ export class VehicleService {
   constructor(private http: HttpClient) {}
 
   getVehicle(id: number) {
-    return this.http.get<Vehicle>(`https://swapi.tech/api/vehicles/${id}/`);
+    return this.http.get<VehicleResponse>(
+      `https://swapi.tech/api/vehicles/${id}/`
+    );
   }
 
   getVehicles() {
-    return this.http.get<ApiResponse>(`https://swapi.tech/api/vehicles/`);
+    return this.http.get<VehiclesResponse>(`https://swapi.tech/api/vehicles/`);
   }
 }

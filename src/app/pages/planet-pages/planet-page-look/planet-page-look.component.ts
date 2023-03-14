@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Planet } from 'src/app/interfaces/planet';
+import { Planet, PlanetDetails } from 'src/app/interfaces/planet';
 import { PlanetService } from 'src/app/services/planet.service';
 import { SettingsService } from 'src/app/services/settings.service';
 
@@ -12,7 +12,7 @@ import { SettingsService } from 'src/app/services/settings.service';
 export class PlanetPageLookComponent {
   showSpinner = false;
   id: number = null;
-  planet: Planet;
+  planet: PlanetDetails;
 
   constructor(
     private route: ActivatedRoute,
@@ -23,8 +23,8 @@ export class PlanetPageLookComponent {
     console.log(this.route.snapshot.params['id']);
     this.id = this.route.snapshot.params['id'];
     this.planetService.getPlanet(this.id).subscribe((planet) => {
-      this.planet = planet;
-      console.log('planet', planet);
+      this.planet = planet.result;
+      console.log('planet', this.planet);
       this.showSpinner = false;
     });
   }

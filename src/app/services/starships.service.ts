@@ -1,12 +1,19 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Starship } from '../interfaces/starships';
+import { Starship, StarshipDetails } from '../interfaces/starships';
+import { VehicleDetails } from '../interfaces/vehicles';
 
-export interface ApiResponse {
+export interface StarshipsResponse {
   count: number;
   next: string;
   previous: string;
   results: Starship[];
+  properties: string;
+}
+
+export interface StarshipResponse {
+  message: string;
+  result: StarshipDetails;
 }
 
 @Injectable({
@@ -16,10 +23,14 @@ export class StarshipService {
   constructor(private http: HttpClient) {}
 
   getStarship(id: number) {
-    return this.http.get<Starship>(`https://swapi.tech/api/starships/${id}/`);
+    return this.http.get<StarshipResponse>(
+      `https://swapi.tech/api/starships/${id}/`
+    );
   }
 
   getStarships() {
-    return this.http.get<ApiResponse>(`https://swapi.tech/api/starships/`);
+    return this.http.get<StarshipsResponse>(
+      `https://swapi.tech/api/starships/`
+    );
   }
 }

@@ -24,7 +24,7 @@
       <h2
         [ngClass]="
           settingsService.colorWhite
-            ? 'text-black border-black '
+            ? 'text-black border-black:'
             : 'text-white border-white '
         "
       >
@@ -41,7 +41,7 @@
   </div> -->
 
   <!-- //fontAwesome -->
-  <div class="topRight sunrise" (click)="settingsService.toggleColor()">
+  <div class="topRight" (click)="settingsService.toggleColor()">
     <img
       id="sun"
       src="../../../assets/img/baseline_light_mode_white_24dp.png"

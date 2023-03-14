@@ -39,17 +39,17 @@ $lightsaber-color: #00bfff;
   color: white;
 }
 
-.bg-white {
-  #myButton {
-    filter: invert(1);
-  }
+// .bg-white {
+//   #myButton {
+//     filter: invert(1);
+//   }
 
-  .visibleMenu {
-    .nav-item a {
-      color: black;
-    }
-  }
-}
+//   .visibleMenu {
+//     .nav-item a {
+//       color: black;
+//     }
+//   }
+// }
 
 @media (min-width: 992px) {
   .visibleMenu {
