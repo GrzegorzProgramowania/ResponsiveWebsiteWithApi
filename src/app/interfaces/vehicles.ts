@@ -6,8 +6,9 @@ export interface Vehicle {
 
 export interface VehicleDetails {
   uid: string;
-  name: string;
+  description: string;
   properties: {
+    name: string;
     cargo_capacity: string;
     consumables: string;
     cost_in_credits: string;

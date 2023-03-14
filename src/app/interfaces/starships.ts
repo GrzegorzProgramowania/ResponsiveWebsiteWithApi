@@ -7,6 +7,7 @@ export interface Starship {
 export interface StarshipDetails {
   active: boolean;
   uid: string;
+  description: string;
   properties: {
     name: string;
     MGLT: string;

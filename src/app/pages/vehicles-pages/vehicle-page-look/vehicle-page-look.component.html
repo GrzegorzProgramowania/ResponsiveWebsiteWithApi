@@ -9,7 +9,8 @@
   >
     <div class="person-title">Star Wars Vehicle</div>
     <div class="person-item">Id : {{ vehicle.uid }}</div>
-    <div class="person-item">Name : {{ vehicle.name }}</div>
+    <div class="person-item">Name : {{ vehicle.properties.name }}</div>
+    <div class="person-item">Description : {{ vehicle.description }}</div>
     <div class="person-item">
       Cargo_capacity : {{ vehicle.properties.cargo_capacity }}
     </div>
@@ -34,9 +35,9 @@
     <div class="person-item">
       Passengers : {{ vehicle.properties.passengers }}
     </div>
-    <div class="person-item">Pilots : {{ vehicle.properties.pilots }}</div>
-    <div class="person-item">Films : {{ vehicle.properties.films }}</div>
-    <div class="person-item">Url : {{ vehicle.properties.url }}</div>
+    <!-- <div class="person-item">Pilots : {{ vehicle.properties.pilots }}</div> -->
+    <!-- <div class="person-item">Films : {{ vehicle.properties.films }}</div> -->
+    <!-- <div class="person-item">Url : {{ vehicle.properties.url }}</div> -->
     <div class="person-item">
       Vehicle_class : {{ vehicle.properties.vehicle_class }}
     </div>

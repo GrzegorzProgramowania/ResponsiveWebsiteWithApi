@@ -9,22 +9,26 @@
   >
     <div class="person-title">Star Wars Film</div>
     <div class="person-item">Title: {{ film.properties.title }}</div>
-    <div class="person-item">Characters: {{ film.properties.characters }}</div>
-    <div class="person-item">Created: {{ film.properties.created | date:'shortDate' }}</div>
+    <!-- <div class="person-item">Characters: {{ film.properties.characters }}</div> -->
+    <div class="person-item">
+      Created: {{ film.properties.created | date : "shortDate" }}
+    </div>
     <div class="person-item">Director: {{ film.properties.director }}</div>
-    <div class="person-item">Edited: {{ film.properties.edited | date}}</div>
+    <div class="person-item">Edited: {{ film.properties.edited | date }}</div>
     <div class="person-item">Episode_id: {{ film.properties.episode_id }}</div>
+    <div class="person-item">Real Id: {{ film.uid }}</div>
     <div class="person-item">
       Opening_crawl {{ film.properties.opening_crawl }}
     </div>
-    <div class="person-item">Planets: {{ film.properties.planets }}</div>
+    <!-- <div class="person-item">Planets: {{ film.properties.planets }}</div> -->
     <div class="person-item">Producer: {{ film.properties.producer }}</div>
     <div class="person-item">
       Release_date: {{ film.properties.release_date }}
     </div>
-    <div class="person-item">Species: {{ film.properties.species }}</div>
+    <!-- <div class="person-item">Species: {{ film.properties.species }}</div>
     <div class="person-item">Starships: {{ film.properties.starships }}</div>
     <div class="person-item">Url: {{ film.properties.url }}</div>
     <div class="person-item">Vehicles: {{ film.properties.vehicles }}</div>
+  </div> -->
   </div>
 </div>

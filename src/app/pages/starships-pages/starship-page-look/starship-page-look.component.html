@@ -8,7 +8,7 @@
     class="person-card"
   >
     <div class="person-title">Star Wars Starship</div>
-    <div class="person-item">Active: {{ starship.active }}</div>
+    <div class="person-item">Description: {{ starship.description }}</div>
     <div class="person-item">Id: {{ starship.uid }}</div>
     <div class="person-item">Name: {{ starship.properties.name }}</div>
     <div class="person-item">MGLT: {{ starship.properties.MGLT }}</div>
@@ -24,6 +24,9 @@
     <div class="person-item">Created: {{ starship.properties.created }}</div>
     <div class="person-item">Crew: {{ starship.properties.crew }}</div>
     <div class="person-item">Edited: {{ starship.properties.edited }}</div>
+    <div class="person-item">
+      Hyperdrive_rating : {{ starship.properties.hyperdrive_rating }}
+    </div>
     <div class="person-item">Length: {{ starship.properties.length }}</div>
     <div class="person-item">
       Manufacturer: {{ starship.properties.manufacturer }}
@@ -35,11 +38,10 @@
     <div class="person-item">
       Passengers: {{ starship.properties.passengers }}
     </div>
-    <div class="person-item">Films: {{ starship.properties.films }}</div>
-    <div class="person-item">Pilots: {{ starship.properties.pilots }}</div>
+    <!-- <div class="person-item">Pilots: {{ starship.properties.pilots }}</div> -->
     <div class="person-item">
       Starship_class: {{ starship.properties.starship_class }}
     </div>
-    <div class="person-item">Url: {{ starship.properties.url }}</div>
+    <!-- <div class="person-item">Url: {{ starship.properties.url }}</div> -->
   </div>
 </div>
