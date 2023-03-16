@@ -37,6 +37,44 @@ $lightsaber-color: #00bfff;
   height: 100%;
   opacity: 90%;
   color: white;
+  .navbar-nav {
+    a {
+      transition: none;
+
+      &.selected {
+        color: $lightsaber-color !important;
+      }
+      &:hover,
+      &:focus {
+        color: $lightsaber-color !important;
+      }
+    }
+  }
+}
+
+.bg-white {
+  .visibleMenu {
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    opacity: 90%;
+    color: black;
+  }
+  .navbar-nav {
+    a {
+      transition: none;
+
+      &.selected {
+        color: $lightsaber-color !important;
+      }
+      &:hover,
+      &:focus {
+        color: $lightsaber-color !important;
+      }
+    }
+  }
 }
 
 // .bg-white {
@@ -68,6 +106,13 @@ a.nav-link {
 a {
   text-decoration: none;
   color: inherit;
+  &.selected {
+    color: $lightsaber-color !important;
+  }
+  &:hover,
+  &:focus {
+    color: $lightsaber-color !important;
+  }
 }
 
 //do kasacji
