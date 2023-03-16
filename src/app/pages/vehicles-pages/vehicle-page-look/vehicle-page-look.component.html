@@ -8,38 +8,47 @@
     class="person-card"
   >
     <div class="person-title">Star Wars Vehicle</div>
-    <div class="person-item">Id : {{ vehicle.uid }}</div>
     <div class="person-item">Name : {{ vehicle.properties.name }}</div>
-    <div class="person-item">Description : {{ vehicle.description }}</div>
+    <div class="person-item">Model : {{ vehicle.properties.model }}</div>
     <div class="person-item">
-      Cargo_capacity : {{ vehicle.properties.cargo_capacity }}
+      Vehicle class : {{ vehicle.properties.vehicle_class }}
+    </div>
+    <div class="person-item">Vehicle Id : {{ vehicle.uid }}</div>
+    <div class="person-item">
+      Crew : {{ vehicle.properties.crew }} characters
+    </div>
+    <div class="person-item">
+      Passengers : {{ vehicle.properties.passengers }} characters
+    </div>
+    <div class="person-item">
+      Max atmosphering speed :
+      {{ vehicle.properties.max_atmosphering_speed }} km/h
+    </div>
+    <div class="person-item">
+      Length : {{ vehicle.properties.length }} metres
+    </div>
+    <div class="person-item">
+      Cost in credits : {{ vehicle.properties.cost_in_credits | number }}
+    </div>
+    <!-- <div class="person-item">Description : {{ vehicle.description }}</div> -->
+    <div class="person-item">
+      Cargo capacity : {{ vehicle.properties.cargo_capacity | number }} kg
     </div>
     <div class="person-item">
       Consumables : {{ vehicle.properties.consumables }}
     </div>
-    <div class="person-item">
-      Cost_in_credits : {{ vehicle.properties.cost_in_credits }}
-    </div>
-    <div class="person-item">Created : {{ vehicle.properties.created }}</div>
 
-    <div class="person-item">Crew : {{ vehicle.properties.crew }}</div>
-    <div class="person-item">Edited : {{ vehicle.properties.edited }}</div>
-    <div class="person-item">Length : {{ vehicle.properties.length }}</div>
     <div class="person-item">
       Manufacturer : {{ vehicle.properties.manufacturer }}
     </div>
     <div class="person-item">
-      Max_atmosphering_speed : {{ vehicle.properties.max_atmosphering_speed }}
+      Created : {{ vehicle.properties.created | date : "mediumDate" }}
     </div>
-    <div class="person-item">Model : {{ vehicle.properties.model }}</div>
     <div class="person-item">
-      Passengers : {{ vehicle.properties.passengers }}
+      Edited : {{ vehicle.properties.edited | date : "mediumDate" }}
     </div>
     <!-- <div class="person-item">Pilots : {{ vehicle.properties.pilots }}</div> -->
     <!-- <div class="person-item">Films : {{ vehicle.properties.films }}</div> -->
     <!-- <div class="person-item">Url : {{ vehicle.properties.url }}</div> -->
-    <div class="person-item">
-      Vehicle_class : {{ vehicle.properties.vehicle_class }}
-    </div>
   </div>
 </div>

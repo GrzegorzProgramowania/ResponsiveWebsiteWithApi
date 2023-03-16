@@ -15,12 +15,14 @@
     <div class="person-item">Producer: {{ film.properties.producer }}</div>
     <!-- <div class="person-item">Characters: {{ film.properties.characters }}</div> -->
     <div class="person-item">
-      Created: {{ film.properties.created | date : "shortDate" }}
+      Created: {{ film.properties.created | date : "mediumDate" }}
     </div>
     <div class="person-item">Director: {{ film.properties.director }}</div>
-    <div class="person-item">Episode id: {{ film.properties.episode_id }}</div>
-    <div class="person-item">Real id: {{ film.uid }}</div>
-    <div class="person-item">Edited: {{ film.properties.edited | date }}</div>
+    <div class="person-item">Episode Id: {{ film.properties.episode_id }}</div>
+    <div class="person-item">Real Id: {{ film.uid }}</div>
+    <div class="person-item">
+      Edited: {{ film.properties.edited | date : "mediumDate" }}
+    </div>
     <div class="person-item">
       Opening crawl: {{ film.properties.opening_crawl }}
     </div>
