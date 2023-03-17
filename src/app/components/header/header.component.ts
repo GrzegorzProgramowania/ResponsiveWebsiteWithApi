@@ -3,6 +3,7 @@ import {
   ElementRef,
   ViewChild,
   ViewEncapsulation,
+  OnInit,
 } from "@angular/core";
 import { SettingsService } from "src/app/services/settings.service";
 
@@ -17,9 +18,28 @@ interface MenuItem {
   styleUrls: ["./header.component.scss"],
   encapsulation: ViewEncapsulation.None,
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
   menuVisible: boolean = false;
   showPlanets: boolean = false;
+  audio = new Audio();
+
+  ngOnInit(): void {
+    this.audio.src = "/assets/sounds/StarWars.mp3";
+    this.audio.load();
+    this.audio.play();
+  }
+
+  // onLoad() {
+  //   var audio = new Audio("/assets/sounds/StarWars.mp3");
+  //   audio.play();
+
+  //   setTimeout(function () {
+  //     audio.pause();
+  //   }, 8500);
+  // }
+
+  // @ViewChild("audio", { static: true })
+  // audio!: ElementRef<HTMLAudioElement>;
 
   oldMenuItems = [
     "home",
@@ -50,25 +70,6 @@ export class HeaderComponent {
   //     ? "../../../assets/img/typNumer2.png"
   //     : "../../../assets/img/typNumer1.png";
   // }
-
-  onLoad() {
-    var audio = new Audio("/assets/sounds/StarWars.mp3");
-    audio.play();
-
-    setTimeout(function () {
-      audio.pause();
-    }, 8500);
-  }
-
-  // toggleColor() {
-  //   this.settingsService.toggleColor();
-  //   this.imgSrc = this.settingsService.colorWhite
-  //     ? "../../../assets/img/typNumer2.png"
-  //     : "../../../assets/img/typNumer1.png";
-  // }
-
-  @ViewChild("audio", { static: true })
-  audio!: ElementRef<HTMLAudioElement>;
 
   //DO SKASOWANIA - nie będzie przełączania dźwięków , zostaje tylko główny dźwięk kiedy otwieram stronkę
   // playSound() {
