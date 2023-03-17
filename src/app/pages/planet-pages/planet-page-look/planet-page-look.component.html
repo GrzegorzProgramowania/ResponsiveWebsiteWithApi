@@ -16,35 +16,31 @@
     <div class="person-item">Climate: {{ planet.properties.climate }}</div>
     <div class="person-item">Terrain: {{ planet.properties.terrain }}</div>
     <div class="person-item">
-      <div class="person-item">
-        Rotation period: {{ planet.properties.rotation_period }} hours
-      </div>
-      <div class="person-item">
-        Orbital period: {{ planet.properties.orbital_period }} years
-      </div>
-      <div class="person-item">
-        Diametr: {{ planet.properties.diameter | number }} kilometers
-      </div>
+      Rotation period: {{ planet.properties.rotation_period }} hours
+    </div>
+    <div class="person-item">
+      Orbital period: {{ planet.properties.orbital_period }} years
+    </div>
+    <div class="person-item">
+      Diametr: {{ planet.properties.diameter | number }} kilometers
+    </div>
 
-      <div class="person-item">Gravity: {{ planet.properties.gravity }}</div>
+    <div class="person-item">Gravity: {{ planet.properties.gravity }}</div>
 
-      <!-- <div class="person-item">
+    <!-- <div class="person-item">
       Population: {{ planet.properties.population }}
     </div> -->
-      <div class="person-item">
-        Residents: {{ planet.properties.population | number }}
-      </div>
+    <div class="person-item">Residents: {{ planet.properties.population }}</div>
 
-      <div class="person-item">
-        Surface water: {{ planet.properties.surface_water }}
-      </div>
-      <div class="person-item">Terrain: {{ planet.properties.terrain }}</div>
-      <div class="person-item">
-        Created: {{ planet.properties.created | date : "mediumDate" }}
-      </div>
-      <div class="person-item">
-        Edited: {{ planet.properties.edited | date : "mediumDate" }}
-      </div>
+    <div class="person-item">
+      Surface water: {{ planet.properties.surface_water }}
+    </div>
+    <div class="person-item">Terrain: {{ planet.properties.terrain }}</div>
+    <div class="person-item">
+      Created: {{ planet.properties.created | date : "mediumDate" }}
+    </div>
+    <div class="person-item">
+      Edited: {{ planet.properties.edited | date : "mediumDate" }}
     </div>
   </div>
 </div>
