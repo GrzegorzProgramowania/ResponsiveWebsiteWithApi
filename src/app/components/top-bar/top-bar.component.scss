@@ -1,22 +1,14 @@
+//variables
+$bgDark: #111213;
+$lightsaber-color: #00bfff;
+$whiteTitle: white;
+
 :host {
   display: block;
 }
-// .topRight {
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   font-size: 2em;
-//   padding: 1em;
-// }
-
-.bg-light {
-  .sunrise {
-    filter: invert(100%);
-  }
-}
 
 .topRight {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   // padding: 10px;
@@ -26,20 +18,16 @@
 }
 
 #sun {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
 }
 
 .bg-light #sun {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   filter: invert(100%);
 }
 
-//variables
-$bgDark: #111213;
-$lightsaber-color: #00bfff;
-$whiteTitle: white;
 // $goldTitle: #fdb813;
 
 // a {

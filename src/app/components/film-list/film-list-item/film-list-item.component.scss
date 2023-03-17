@@ -7,15 +7,26 @@ $lightsaber-color: #00bfff;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.card-body {
-  text-align: center;
-  color: white; //kolor tekstu domyślny
   &:hover {
     color: $lightsaber-color; //kolor tekstu po najechaniu na blok
   }
-  .active {
-    color: $lightsaber-color;
-  }
 }
+
+//DO KASACJI
+// $lightsaber-color: #00bfff;
+// .card-body {
+//   :hover {
+//     color: $lightsaber-color;
+//   }
+// }
+
+// .card-body {
+//   text-align: center;
+//   color: white; //kolor tekstu domyślny
+//   &:hover {
+//     color: $lightsaber-color; //kolor tekstu po najechaniu na blok
+//   }
+//   .active {
+//     color: $lightsaber-color;
+//   }
+// }
