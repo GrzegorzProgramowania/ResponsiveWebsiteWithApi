@@ -11,7 +11,7 @@ $whiteTitle: white;
   position: absolute;
   top: 0;
   right: 0;
-  // padding: 10px;
+
   padding-right: 10px;
   background-color: transparent;
   z-index: 9999;
@@ -22,18 +22,6 @@ $whiteTitle: white;
   height: 15px;
 }
 
-.bg-light #sun {
-  width: 15px;
-  height: 15px;
-  filter: invert(100%);
-}
-
-// $goldTitle: #fdb813;
-
-// a {
-//   text-decoration: none;
-//   // color: inherit;
-// }
 .star-wars-h2 {
   text-shadow: -2px 2px #000, 2px 2px #000, -2px -2px #000, 2px -2px #000;
   color: #fff;
@@ -44,7 +32,6 @@ $whiteTitle: white;
 .bg-white {
   .star-wars-h2 {
     text-shadow: -2px 2px #fff, 2px 2px #fff, -2px -2px #fff, 2px -2px #fff;
-    // background: black;
     justify-content: center;
     text-align: center;
   }
