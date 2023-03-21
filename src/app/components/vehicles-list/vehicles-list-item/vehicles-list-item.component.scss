@@ -11,12 +11,8 @@ $lightsaber-color: #00bfff;
 
 .card-body {
   text-align: center;
-  color: white; //kolor tekstu domyślny
+  color: white;
   &:hover {
-    color: $lightsaber-color; //kolor tekstu po najechaniu na blok
-  }
-  //nie działa
-  .active {
     color: $lightsaber-color;
   }
 }

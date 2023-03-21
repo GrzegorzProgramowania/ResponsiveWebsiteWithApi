@@ -21,25 +21,15 @@ interface MenuItem {
 export class HeaderComponent implements OnInit {
   menuVisible: boolean = false;
   showPlanets: boolean = false;
-  audio = new Audio();
+  audio: HTMLAudioElement;
 
   ngOnInit(): void {
+    this.audio = new Audio();
     this.audio.src = "/assets/sounds/StarWars.mp3";
+    this.audio.autoplay = true;
+    this.audio.muted = true;
     this.audio.load();
-    this.audio.play();
   }
-
-  // onLoad() {
-  //   var audio = new Audio("/assets/sounds/StarWars.mp3");
-  //   audio.play();
-
-  //   setTimeout(function () {
-  //     audio.pause();
-  //   }, 8500);
-  // }
-
-  // @ViewChild("audio", { static: true })
-  // audio!: ElementRef<HTMLAudioElement>;
 
   oldMenuItems = [
     "home",
@@ -61,30 +51,5 @@ export class HeaderComponent implements OnInit {
     { path: "vehicles", text: "Vehicles" },
   ];
 
-  // imgSrc: string;
-
   constructor(public settingsService: SettingsService) {}
-
-  // ngOnInit() {
-  //   this.imgSrc = this.settingsService.colorWhite
-  //     ? "../../../assets/img/typNumer2.png"
-  //     : "../../../assets/img/typNumer1.png";
-  // }
-
-  //DO SKASOWANIA - nie będzie przełączania dźwięków , zostaje tylko główny dźwięk kiedy otwieram stronkę
-  // playSound() {
-  //   this.audio.nativeElement.play();
-  //   setTimeout(() => {
-  //     this.audio.nativeElement.pause();
-  //   }, this.audio.nativeElement.duration * 500);
-  // }
-
-  // toggleSound() {
-  //   this.settingsService.soundOn = !this.settingsService.soundOn;
-  //   if (this.settingsService.soundOn) {
-  //     this.playSound();
-  //   } else {
-  //     this.audio.nativeElement.pause();
-  //   }
-  // }
 }
