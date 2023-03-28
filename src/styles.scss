@@ -31,6 +31,12 @@ $lightsaber-color: #00bfff;
 img {
   color: white;
 }
+
+.bg-light .lightSabers {
+  img {
+    filter: invert(100%);
+  }
+}
 //////////////////////////////////
 ///HUGE SCREENS XXXL >2000px
 @media (min-width: 2000px) {
@@ -43,6 +49,19 @@ img {
 /////////////////////////////////////
 /*BIG SCREENS XXL*/
 @media (min-width: 1200px) {
+  .lightSabers {
+    img {
+      width: 85px;
+      height: 85px;
+    }
+  }
+  .bg-light .lightSabers {
+    img {
+      width: 85px;
+      height: 85px;
+      filter: invert(100%);
+    }
+  }
   .notFound {
     width: 100%;
     height: 100%;
