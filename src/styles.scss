@@ -40,9 +40,9 @@ img {
 //////////////////////////////////
 ///HUGE SCREENS XXXL >2000px
 @media (min-width: 2000px) {
-  footer {
-    margin-top: -70px;
-  }
+  // footer {
+  //   margin-top: -70px;
+  // }
   .copyright {
     margin-top: 70px;
   }
@@ -55,10 +55,11 @@ img {
 /////////////////////////////////////
 /*BIG SCREENS XXL*/
 @media (min-width: 1200px) {
-  footer {
-    margin-top: -70px;
-  }
+  // footer {
+  //   // margin-top: -70px;
+  // }
   .copyright {
+    position: flex;
     margin-top: 70px;
   }
   .lightSabers {
@@ -124,6 +125,13 @@ img {
 }
 /*DESKTOP XL*/
 @media (min-width: 992px) and (max-width: 1199px) {
+  // footer {
+  //   // margin-top: -70px;
+  // }
+  .copyright {
+    position: flex;
+    margin-top: 70px;
+  }
   .mb-4 {
     margin-top: -40px;
     margin-bottom: 40px !important;
@@ -168,8 +176,8 @@ img {
 }
 
 /*TABLET*/
-//HAMBURGER MENU NIE DZIAŁA NA 991PX!!!!!!!!!!
-@media (min-width: 768px) and (max-width: 991px) {
+//SPRWADZIĆ 991 PX yoda, tekst i light sabers
+@media (min-width: 768px) and (max-width: 992px) {
   .mb-4 {
     margin-top: -120px;
     margin-bottom: 17px !important;
@@ -210,7 +218,7 @@ img {
 }
 
 /*SMALL DEVICES*/
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 768px) {
   .mb-4 {
     margin-top: -120px;
     margin-bottom: 43px !important;
@@ -264,7 +272,18 @@ img {
 }
 
 /*SMALL DEVICES */
-@media (min-width: 320px) and (max-width: 575px) {
+@media (min-width: 320px) and (max-width: 576px) {
+  .lightSabers {
+    img {
+      width: 50px;
+      height: 50px;
+      margin-top: 10px;
+    }
+  }
+  p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .notFound {
     width: 100%;
     height: 100%;
@@ -305,7 +324,7 @@ img {
 }
 
 /*VERY SMALL DEVICES */
-@media (min-width: 0px) and (max-width: 319px) {
+@media (min-width: 0px) and (max-width: 320px) {
   .notFound {
     width: 100%;
     height: 100%;
