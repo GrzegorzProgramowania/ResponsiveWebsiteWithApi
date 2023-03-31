@@ -3,10 +3,12 @@ import { Component, EventEmitter, HostListener, Output } from '@angular/core';
 @Component({
   selector: 'app-intro',
   templateUrl: './intro.component.html',
-  styleUrls: ['./intro.component.scss']
+  styleUrls: ['./intro.component.scss'],
 })
 export class IntroComponent {
-  audio: HTMLAudioElement = new Audio('/assets/sounds/StarWars.mp3');
+  audio: HTMLAudioElement = new Audio(
+    '/assets/sounds/Star_Wars_Main_Theme_Song.mp3'
+  );
 
   @Output()
   hide: EventEmitter<void> = new EventEmitter();
@@ -21,10 +23,9 @@ export class IntroComponent {
         this.end();
       });
     }, 50);
-    
   }
 
-  @HostListener('document:keydown.escape') 
+  @HostListener('document:keydown.escape')
   onEscape() {
     this.end();
   }
@@ -33,5 +34,4 @@ export class IntroComponent {
     this.hide.emit();
     this.audio?.pause();
   }
-
 }
