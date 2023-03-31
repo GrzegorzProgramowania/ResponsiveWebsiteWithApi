@@ -1,4 +1,4 @@
-<div
+<div class="appContainer"
   [ngClass]="{
     'bg-dark text-white': !settingsService.colorWhite,
     'bg-light text-dark': settingsService.colorWhite
@@ -11,3 +11,4 @@
   </div>
   <app-footer></app-footer>
 </div>
+<app-intro *ngIf="showIntro" (hide)="hideIntro()"></app-intro>

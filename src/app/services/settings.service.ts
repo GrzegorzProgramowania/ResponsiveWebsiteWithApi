@@ -12,6 +12,7 @@ export class SettingsService {
   private renderer: Renderer2;
 
   colorWhite = false;
+
   colorChanged = new EventEmitter<boolean>();
 
   constructor() {}

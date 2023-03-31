@@ -41,6 +41,7 @@ import { SpeciesPageLookComponent } from './pages/species-pages/species-page-loo
 import { StarshipPageLookComponent } from './pages/starships-pages/starship-page-look/starship-page-look.component';
 import { VehiclePageLookComponent } from './pages/vehicles-pages/vehicle-page-look/vehicle-page-look.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { IntroComponent } from './intro/intro.component';
 
 @NgModule({
   declarations: [
@@ -75,6 +76,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     StarshipPageLookComponent,
     VehiclePageLookComponent,
     NotFoundComponent,
+    IntroComponent,
   ],
   imports: [
     BrowserModule,

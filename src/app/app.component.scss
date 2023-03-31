@@ -1,3 +1,10 @@
+.appContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .pageContainer {
-  min-height: calc(100vh - 183px);
+  flex-grow: 1;
 }
