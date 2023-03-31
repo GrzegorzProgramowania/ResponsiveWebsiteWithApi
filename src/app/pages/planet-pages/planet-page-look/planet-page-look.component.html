@@ -8,39 +8,53 @@
     class="person-card"
   >
     <div class="person-title">Star Wars Planet</div>
-    <div class="person-item">Name: {{ planet.properties.name }}</div>
-    <div class="person-item">Planet Id: {{ planet.uid }}</div>
+    <div class="person-item">
+      <span>Name:</span> {{ planet.properties.name }}
+    </div>
+    <div class="person-item"><span>Planet Id:</span> {{ planet.uid }}</div>
 
     <!-- <div class="person-item">Description: {{ planet.description }}</div> -->
     <!-- <div class="person-item">Url: {{ planet.properties.url }}</div> -->
-    <div class="person-item">Climate: {{ planet.properties.climate }}</div>
-    <div class="person-item">Terrain: {{ planet.properties.terrain }}</div>
     <div class="person-item">
-      Rotation period: {{ planet.properties.rotation_period }} hours
+      <span>Climate:</span> {{ planet.properties.climate }}
     </div>
     <div class="person-item">
-      Orbital period: {{ planet.properties.orbital_period }} years
+      <span>Terrain:</span> {{ planet.properties.terrain }}
     </div>
     <div class="person-item">
-      Diametr: {{ planet.properties.diameter | number }} kilometers
+      <span>Rotation period:</span>
+      {{ planet.properties.rotation_period }} hours
+    </div>
+    <div class="person-item">
+      <span>Orbital period:</span> {{ planet.properties.orbital_period }} years
+    </div>
+    <div class="person-item">
+      <span>Diametr:</span> {{ planet.properties.diameter | number }} kilometers
     </div>
 
-    <div class="person-item">Gravity: {{ planet.properties.gravity }}</div>
+    <div class="person-item">
+      <span>Gravity:</span> {{ planet.properties.gravity }}
+    </div>
 
     <!-- <div class="person-item">
       Population: {{ planet.properties.population }}
     </div> -->
-    <div class="person-item">Residents: {{ planet.properties.population }}</div>
+    <div class="person-item">
+      <span>Residents:</span> {{ planet.properties.population }}
+    </div>
 
     <div class="person-item">
-      Surface water: {{ planet.properties.surface_water }}
-    </div>
-    <div class="person-item">Terrain: {{ planet.properties.terrain }}</div>
-    <div class="person-item">
-      Created: {{ planet.properties.created | date : "mediumDate" }}
+      <span>Surface water:</span> {{ planet.properties.surface_water }}
     </div>
     <div class="person-item">
-      Edited: {{ planet.properties.edited | date : "mediumDate" }}
+      <span>Terrain: </span>{{ planet.properties.terrain }}
+    </div>
+    <div class="person-item">
+      <span>Created: </span
+      >{{ planet.properties.created | date : "mediumDate" }}
+    </div>
+    <div class="person-item">
+      <span>Edited: </span>{{ planet.properties.edited | date : "mediumDate" }}
     </div>
   </div>
 </div>

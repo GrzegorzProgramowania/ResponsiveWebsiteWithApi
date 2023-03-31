@@ -8,47 +8,48 @@
     class="person-card"
   >
     <div class="person-title">Star Wars Vehicle</div>
-    <div class="person-item">Name : {{ vehicle.properties.name }}</div>
-    <div class="person-item">Model : {{ vehicle.properties.model }}</div>
     <div class="person-item">
-      Vehicle class : {{ vehicle.properties.vehicle_class }}
-    </div>
-    <div class="person-item">Vehicle Id : {{ vehicle.uid }}</div>
-    <div class="person-item">
-      Crew : {{ vehicle.properties.crew }} characters
+      <span>Name:</span> {{ vehicle.properties.name }}
     </div>
     <div class="person-item">
-      Passengers : {{ vehicle.properties.passengers }} characters
+      <span>Model:</span> {{ vehicle.properties.model }}
     </div>
     <div class="person-item">
-      Max atmosphering speed :
+      <span>Vehicle class:</span> {{ vehicle.properties.vehicle_class }}
+    </div>
+    <div class="person-item"><span>Vehicle Id:</span> {{ vehicle.uid }}</div>
+    <div class="person-item">
+      <span>Crew:</span> {{ vehicle.properties.crew }} characters
+    </div>
+    <div class="person-item">
+      <span>Passengers:</span> {{ vehicle.properties.passengers }} characters
+    </div>
+    <div class="person-item">
+      <span>Max atmosphering speed:</span>
       {{ vehicle.properties.max_atmosphering_speed }} km/h
     </div>
     <div class="person-item">
-      Length : {{ vehicle.properties.length }} metres
+      <span>Length:</span> {{ vehicle.properties.length }} metres
     </div>
     <div class="person-item">
-      Cost in credits : {{ vehicle.properties.cost_in_credits }}
+      <span>Cost in credits:</span> {{ vehicle.properties.cost_in_credits }}
     </div>
     <!-- <div class="person-item">Description : {{ vehicle.description }}</div> -->
     <div class="person-item">
-      Cargo capacity : {{ vehicle.properties.cargo_capacity }} kg
+      <span>Cargo capacity:</span> {{ vehicle.properties.cargo_capacity }} kg
     </div>
     <div class="person-item">
-      Consumables : {{ vehicle.properties.consumables }}
-    </div>
-
-    <div class="person-item">
-      Manufacturer : {{ vehicle.properties.manufacturer }}
+      <span>Consumables:</span> {{ vehicle.properties.consumables }}
     </div>
     <div class="person-item">
-      Created : {{ vehicle.properties.created | date : "mediumDate" }}
+      <span>Manufacturer:</span> {{ vehicle.properties.manufacturer }}
     </div>
     <div class="person-item">
-      Edited : {{ vehicle.properties.edited | date : "mediumDate" }}
+      <span>Created:</span>
+      {{ vehicle.properties.created | date : "mediumDate" }}
     </div>
-    <!-- <div class="person-item">Pilots : {{ vehicle.properties.pilots }}</div> -->
-    <!-- <div class="person-item">Films : {{ vehicle.properties.films }}</div> -->
-    <!-- <div class="person-item">Url : {{ vehicle.properties.url }}</div> -->
+    <div class="person-item">
+      <span>Edited:</span> {{ vehicle.properties.edited | date : "mediumDate" }}
+    </div>
   </div>
 </div>

@@ -9,53 +9,61 @@
   >
     <div class="person-title">Star Wars Starship</div>
     <!-- <div class="person-item">Description: {{ starship.description }}</div> -->
-    <div class="person-item">Name: {{ starship.properties.name }}</div>
-    <div class="person-item">Model: {{ starship.properties.model }}</div>
     <div class="person-item">
-      Starship class: {{ starship.properties.starship_class }}
-    </div>
-    <div class="person-item">Starship Id: {{ starship.uid }}</div>
-    <div class="person-item">
-      Crew: {{ starship.properties.crew }} characters
+      <span>Name:</span> {{ starship.properties.name }}
     </div>
     <div class="person-item">
-      Passengers: {{ starship.properties.passengers }} characters
+      <span>Model:</span> {{ starship.properties.model }}
     </div>
-    <div class="person-item">MGLT: {{ starship.properties.MGLT }}</div>
     <div class="person-item">
-      Max atmosphering speed:
+      <span>Starship class:</span> {{ starship.properties.starship_class }}
+    </div>
+    <div class="person-item">
+      <span>Starship Id: {{ starship.uid }}</span>
+    </div>
+    <div class="person-item">
+      <span>Crew:</span> {{ starship.properties.crew }} characters
+    </div>
+    <div class="person-item">
+      <span>Passengers:</span> {{ starship.properties.passengers }} characters
+    </div>
+    <div class="person-item">
+      <span>MGLT:</span> {{ starship.properties.MGLT }}
+    </div>
+    <div class="person-item">
+      <span>Max atmosphering speed:</span>
       {{ starship.properties.max_atmosphering_speed }} km/h
     </div>
     <div class="person-item">
-      Length: {{ starship.properties.length }} metres
+      <span>Length:</span> {{ starship.properties.length }} metres
     </div>
 
     <div class="person-item">
-      Cost in credits: {{ starship.properties.cost_in_credits }}
+      <span>Cost in credits:</span> {{ starship.properties.cost_in_credits }}
     </div>
     <div class="person-item">
-      Cargo capacity: {{ starship.properties.cargo_capacity | number }} kg
+      <span>Cargo capacity:</span>
+      {{ starship.properties.cargo_capacity | number }} kg
     </div>
     <div class="person-item">
-      Consumables: {{ starship.properties.consumables }}
+      <span>Consumables:</span> {{ starship.properties.consumables }}
     </div>
     <div class="person-item">
-      Hyperdrive rating : {{ starship.properties.hyperdrive_rating }}
+      <span>Hyperdrive rating:</span>
+      {{ starship.properties.hyperdrive_rating }}
     </div>
 
     <div class="person-item">
-      Manufacturer: {{ starship.properties.manufacturer }}
+      <span>Manufacturer:</span> {{ starship.properties.manufacturer }}
     </div>
 
     <div class="person-item">
-      Created: {{ starship.properties.created | date : "mediumDate" }}
+      <span>Created:</span>
+      {{ starship.properties.created | date : "mediumDate" }}
     </div>
     <div class="person-item">
-      Edited: {{ starship.properties.edited | date : "mediumDate" }}
+      <span>Edited:</span>
+      {{ starship.properties.edited | date : "mediumDate" }}
     </div>
-
-    <!-- <div class="person-item">Pilots: {{ starship.properties.pilots }}</div> -->
-
-    <!-- <div class="person-item">Url: {{ starship.properties.url }}</div> -->
   </div>
 </div>

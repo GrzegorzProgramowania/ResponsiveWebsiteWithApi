@@ -8,31 +8,31 @@
     class="person-card"
   >
     <div class="person-title">Star Wars Film</div>
-    <div class="person-item">Title: {{ film.properties.title }}</div>
     <div class="person-item">
-      Release date: {{ film.properties.release_date }}
+      <span>Title:</span> {{ film.properties.title }}
     </div>
-    <div class="person-item">Producer: {{ film.properties.producer }}</div>
+    <div class="person-item">
+      <span>Release date:</span> {{ film.properties.release_date }}
+    </div>
+    <div class="person-item">
+      <span>Producer:</span> {{ film.properties.producer }}
+    </div>
     <!-- <div class="person-item">Characters: {{ film.properties.characters }}</div> -->
     <div class="person-item">
-      Created: {{ film.properties.created | date : "mediumDate" }}
-    </div>
-    <div class="person-item">Director: {{ film.properties.director }}</div>
-    <div class="person-item">Episode Id: {{ film.properties.episode_id }}</div>
-    <div class="person-item">Real Id: {{ film.uid }}</div>
-    <div class="person-item">
-      Edited: {{ film.properties.edited | date : "mediumDate" }}
+      <span>Created:</span> {{ film.properties.created | date : "mediumDate" }}
     </div>
     <div class="person-item">
-      Opening crawl: {{ film.properties.opening_crawl }}
+      <span>Director:</span> {{ film.properties.director }}
     </div>
-
-    <!-- <div class="person-item">Planets: {{ film.properties.planets }}</div> -->
-
-    <!-- <div class="person-item">Species: {{ film.properties.species }}</div>
-    <div class="person-item">Starships: {{ film.properties.starships }}</div>
-    <div class="person-item">Url: {{ film.properties.url }}</div>
-    <div class="person-item">Vehicles: {{ film.properties.vehicles }}</div>
-  </div> -->
+    <div class="person-item">
+      <span>Episode Id:</span> {{ film.properties.episode_id }}
+    </div>
+    <div class="person-item"><span>Real Id:</span> {{ film.uid }}</div>
+    <div class="person-item">
+      <span>Edited:</span> {{ film.properties.edited | date : "mediumDate" }}
+    </div>
+    <div class="person-item">
+      <span>Opening crawl:</span> {{ film.properties.opening_crawl }}
+    </div>
   </div>
 </div>

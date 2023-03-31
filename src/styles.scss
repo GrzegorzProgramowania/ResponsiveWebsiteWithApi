@@ -3,6 +3,14 @@
   color: white;
 }
 
+span {
+  color: yellow;
+}
+.bg-light {
+  span {
+    color: #00bfff;
+  }
+}
 .light {
   background-color: white;
   color: black;
