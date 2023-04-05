@@ -1,15 +1,19 @@
 <div *ngIf="settingsService">
   <div>
     <a class="fw-bold star-wars-h2" href="#">
-      <h2
-        [ngClass]="
-          settingsService.colorWhite
-            ? 'text-black border-black:'
-            : 'text-white border-white '
-        "
+      <span
+        ><h2
+          class="inline-text"
+          [ngClass]="
+            settingsService.colorWhite
+              ? 'text-black border-black:'
+              : 'text-white border-white '
+          "
+        >
+          WORLD OF
+          <span class="inline-text" id="starWars">STAR WARS</span>
+        </h2></span
       >
-        WORLD OF STAR WARS
-      </h2>
     </a>
   </div>
   <div class="topRight" (click)="settingsService.toggleColor()">
